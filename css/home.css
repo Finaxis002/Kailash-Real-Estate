@@ -8,14 +8,13 @@
 }
 @font-face {
   font-family: cinzel_heading_font;
-  src: url(/fonts/Cinzel-Black.otf);
-  src: url(/fonts/Cinzel-Bold.otf);
-  src: url(/fonts/Cinzel-Regular.otf);
-  src: url(/fonts/Cinzel-Regular.ttf);
+  src: url(/fonts/Cinzel-Black.woff2);
+  src: url(/fonts/Cinzel-Bold.woff2);
+  src: url(/fonts/Cinzel-Regular.woff2);
 }
 @font-face {
   font-family: raleway;
-  src: url(/fonts/Raleway-VariableFont_wght.ttf);
+  src: url(/fonts/Raleway-VariableFont_wght.woff2);
 }
 
 * {
