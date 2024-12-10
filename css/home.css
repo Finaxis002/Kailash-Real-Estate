@@ -1044,6 +1044,78 @@ main{
     
   }
   
+
+  /* css for after-journey */
   
+  .after-journey{
+    height: 110vh;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .after-journey h1{
+    font-size: 10rem;
+    font-weight: 700;
+    letter-spacing: 25px;
+    color: #00000021;
+  }
+
+  .after-journey .circle {
+    position: relative;
+    border:100px solid #12A1BE;
+  border-radius:50%;
+  background:rgba(0,0,0,0);
+  color:white;
+  width: 650px;
+  height:650px;
+  text-align:center;
+  margin-top: -13%;
+  margin-right: 85%;
+  }
   
+
+
+   /* .circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: linear-gradient(
+      204deg,
+      rgba(18, 161, 190, 1) 21%,
+      rgba(0, 0, 0, 1) 89%
+    ); 
+    mask: radial-gradient(circle, transparent calc(50% - 2px), black 50%);
+  
+  }  */
+  
+  .after-journey img{
+    position: absolute;
+    height: 20rem;
+    margin-top: 18%;
+    margin-right: 30%;
+  }
+
+  .after-journey .content {
+    position: absolute;
+    background-color: #e6dddd;
+    margin-left: 60%;
+    margin-top: 15%;
+    text-align: justify;
+    padding: 20px;
+  }
+  .after-journey .content h2{
+    font-size: 3rem;
+    font-family: rusticRoadway;
+  }
+  .after-journey .content p{
+    text-align: justify;
+  }
   
