@@ -1,21 +1,21 @@
 @font-face {
   font-family: myFirstFont;
-  src: url(fonts/Madelican.otf);
+  src: url(/fonts/Madelican.otf);
 }
 @font-face {
   font-family: rusticRoadway;
-  src: url(fonts/RusticRoadway.otf);
+  src: url(/fonts/RusticRoadway.otf);
 }
 @font-face {
   font-family: cinzel_heading_font;
-  src: url(fonts/Cinzel-Black.otf);
-  src: url(fonts/Cinzel-Bold.otf);
-  src: url(fonts/Cinzel-Regular.otf);
-  src: url(fonts/Cinzel-Regular.ttf);
+  src: url(/fonts/Cinzel-Black.otf);
+  src: url(/fonts/Cinzel-Bold.otf);
+  src: url(/fonts/Cinzel-Regular.otf);
+  src: url(/fonts/Cinzel-Regular.ttf);
 }
 @font-face {
   font-family: raleway;
-  src: url(fonts/Raleway-VariableFont_wght.ttf);
+  src: url(/fonts/Raleway-VariableFont_wght.ttf);
 }
 
 * {
