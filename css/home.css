@@ -908,7 +908,8 @@ main{
   }
   main::before{
     content: '';
-    background: rgba(0,0,0,0.5);
+    /* background: rgba(0,0,0,0.5); */
+    background: rgba(255,255,255,0.1);
     position: absolute;
     top: 0;
     left: 0;
@@ -921,12 +922,26 @@ main{
     font-size: 4em;
     font-family: cinzel_heading_font
   }
-  h2{
-    margin-bottom: 0.5em;
+  main h2{
+    margin-bottom: 0.1em;
+    font-size: 2em;
+    font-family: cinzel_heading_font
+  }
+  .step_num{
+    margin-left: 0;
+    color: #757373;
+  }
+  .line_after_text{
+    width: 15em;
+    border-top: .3em solid white;
   }
   .title{
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.8);
+    background: linear-gradient(
+      204deg,
+      rgba(18, 161, 190, 1) 21%,
+      rgba(0, 0, 0, 1) 89%
+    );
     padding: 2em;
     position: relative ; 
   }
