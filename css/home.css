@@ -205,11 +205,17 @@ header {
   justify-content: center;
   gap: 2px;
 }
-.logo h3 {
+.logo h2 {
   padding: 20px 0px 0px 0px;
-  font-size: 1.1rem;
+  font-size: 2rem;
   font-family: cinzel_heading_font;
   font-weight: 700;
+  margin-bottom: 0;
+}
+.logo h5{
+    font-size: 0.8rem;
+    font-family: cinzel_heading_font;
+    font-weight: 500;
 }
 .logo img {
   height: 80px;
@@ -327,7 +333,7 @@ nav a:hover::after {
 
 .hero-bg {
   width: 90%;
-  padding: 4rem;
+  padding: 4rem 0rem;
   color: white;
   display: flex;
   gap: 20px;
@@ -342,7 +348,8 @@ background: linear-gradient(95deg, rgba(28,59,80,1) 16%, rgba(85,137,185,1) 35%)
 .heading-parent {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 40%;
+  
 }
 .heading-1 {
   font-family: cinzel_heading_font;
@@ -368,11 +375,13 @@ background: linear-gradient(95deg, rgba(28,59,80,1) 16%, rgba(85,137,185,1) 35%)
 }
 
 .image_div {
-  margin-left: 166px;
-  margin-top: -160px;
+  /* margin-left: 166px; */
+  margin-top: -18.5%;
 }
 .image_div img {
   object-fit: cover;
+  height: 32rem;
+  width: auto;
 }
 
 /* Project section css */
@@ -1046,7 +1055,7 @@ main{
   /* css for after-journey */
   
   .after-journey{
-    height: 110vh;
+    height: 122vh;
     position: relative;
     background-color: white;
     display: flex;
