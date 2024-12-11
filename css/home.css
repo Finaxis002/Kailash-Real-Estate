@@ -92,30 +92,7 @@ li {
   z-index: 99999999;
 }
 
-.wheel {
-  width: 100px;
-  /* color: rgb(10, 9, 9);     */
-}
 
-@keyframes an {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-#ArrowDiv {
-  width: 60px;
-  height: 60px;
-  background-color: white;
-  position: absolute;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 @keyframes bounce {
   0% {
