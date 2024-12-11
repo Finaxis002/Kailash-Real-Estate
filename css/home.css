@@ -1079,35 +1079,18 @@ main{
 
   .after-journey .circle {
     position: relative;
-    border:100px solid #12A1BE;
+    border:100px solid transparent;
   border-radius:50%;
-  background:rgba(0,0,0,0);
   color:white;
   width: 650px;
   height:650px;
   text-align:center;
   margin-top: -13%;
   margin-right: 85%;
+  background: linear-gradient(#ffffff, #ffffff  ) padding-box,
+  linear-gradient(to bottom, #12A1BE 0%, #000000 100%) border-box
   }
   
-
-
-   /* .circle::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 50%;
-    background: linear-gradient(
-      204deg,
-      rgba(18, 161, 190, 1) 21%,
-      rgba(0, 0, 0, 1) 89%
-    ); 
-    mask: radial-gradient(circle, transparent calc(50% - 2px), black 50%);
-  
-  }  */
   
   .after-journey img{
     position: absolute;
@@ -1118,17 +1101,52 @@ main{
 
   .after-journey .content {
     position: absolute;
-    background-color: #e6dddd;
+    background-color: #e6dddd4d;
     margin-left: 60%;
     margin-top: 15%;
     text-align: justify;
-    padding: 20px;
+    padding: 20px 15px;
   }
   .after-journey .content h2{
     font-size: 3rem;
     font-family: rusticRoadway;
+    display: flex; /* Enable flexbox for alignment */
+    align-items: center; /* Vertically center the text with the line */
   }
+  .after-journey .content h2::before {
+    content: '';
+    height: 40px; /* Adjust the height of the line */
+    width: 2px; /* Adjust the width of the line */
+    background: #12A1BE; /* Line color */
+    margin-right: 15px; /* Space between the line and the text */
+}
   .after-journey .content p{
     text-align: justify;
+  }
+  .after-journey .content ul{
+    list-style: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  .after-journey .content ul li{
+    padding: 5px 10px;
+    display: flex;
+    align-items: start;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    gap: 5px;
+  }
+  .after-journey .content ul li i{
+    background-color: #12A1BE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #fff;
+    padding: 3px 5px;
+    margin-top: 5px;
   }
   
