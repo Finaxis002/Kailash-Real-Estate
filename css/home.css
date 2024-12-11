@@ -44,6 +44,7 @@ li {
 }
 .main {
   transition: background-color 0.3s ease; /* Smooth transition */
+  
 }
 #smcircle {
   position: fixed;
@@ -334,6 +335,7 @@ nav a:hover::after {
   align-items: center;
   justify-content: center;
   margin-top: 8%;
+  z-index: 1;
 }
 
 .hero-section {
