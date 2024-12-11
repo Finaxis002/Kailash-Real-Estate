@@ -1115,8 +1115,8 @@ main{
   }
   .after-journey .content h2::before {
     content: '';
-    height: 40px; /* Adjust the height of the line */
-    width: 2px; /* Adjust the width of the line */
+    height: 45px; /* Adjust the height of the line */
+    width: 3px; /* Adjust the width of the line */
     background: #12A1BE; /* Line color */
     margin-right: 15px; /* Space between the line and the text */
 }
