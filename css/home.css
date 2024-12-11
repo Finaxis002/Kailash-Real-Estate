@@ -22,6 +22,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: raleway;
+  cursor:default;
 }
 html,
 body {
@@ -190,9 +191,10 @@ header {
   justify-content: space-between;
   align-items: center;
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  z-index: 10;
+  position: relative;
 }
 .logo {
   font-size: 24px;
@@ -799,6 +801,8 @@ background: linear-gradient(95deg, rgba(28,59,80,1) 16%, rgba(85,137,185,1) 35%)
 }
 
 .box {
+  --a: 8deg;
+  transition: .4s;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -815,7 +819,10 @@ background: linear-gradient(95deg, rgba(28,59,80,1) 16%, rgba(85,137,185,1) 35%)
   border: 1px solid rgba(255, 255, 255, 0.3);
   transition: all 0.5s ease-in-out;
 }
-
+.box:hover {
+  --i: -1;
+  -webkit-mask-position: 0 0;
+}
   
 
 .circle {
@@ -961,6 +968,7 @@ main{
     border-radius: 1em;
     padding:2em ;
     background-color: rgba(0, 0, 0, 0.808);
+    
   }
   .checkpoint p{
     line-height: 27px;

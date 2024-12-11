@@ -1,0 +1,23 @@
+.main-contact header{
+    background: transparent;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+}
+
+.contact-one{
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    gap: 20px;
+}
+
+.contact-one .circle {
+    width: 42rem;
+    height: 42rem;
+    border:100px solid transparent;
+    background: linear-gradient(#ffffff, #ffffff  ) padding-box,
+    linear-gradient(to bottom, #12A1BE 0%, #000000 100%) border-box;
+    margin-top: -20%;
+    margin-right: -14%;
+    z-index: 1;
+}
