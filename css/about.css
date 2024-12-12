@@ -115,7 +115,7 @@
 
   .about-two{
     height: 70vh;
-    background: url(/images/aboutimg1.webp);
+    background: url(../images/aboutimg1.webp);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -221,7 +221,7 @@
     flex-direction: column;
     gap: 40px;
     z-index: 2;
-    background: url(/images/timeline-11.jpg);
+    background: url(../images/timeline-11.jpg);
 background-position: center;
 background-size: cover;
     position: relative;
