@@ -212,10 +212,10 @@ header {
   font-weight: 700;
   margin-bottom: 0;
 }
-.logo h5{
-    font-size: 0.8rem;
-    font-family: cinzel_heading_font;
-    font-weight: 500;
+.logo h5 {
+  font-size: 1.35rem;
+  font-family: cinzel_heading_font;
+  font-weight: 500;
 }
 .logo img {
   height: 80px;
