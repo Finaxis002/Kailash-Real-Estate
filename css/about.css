@@ -24,23 +24,35 @@
     align-items: center;
     justify-content: center;
     padding: 20px 80px;
+    position: relative;
+    z-index: 2;
   }
   .about-one .image img{
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  .about-one .content{
-    /* background-color: red; */
-    width: 30%;
-    height: 80%;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+  .about-one .border {
+    width: 22%;
+    height: 81%;
+    background-color: transparent;
+    border: 5px solid #12A1BE !important;
     position: relative;
-    align-items: start;
-  }
+    margin-left: -26%;
+    margin-top: 0%;
+    z-index: 1;
+}
+.about-one .content {
+  /* background-color: red; */
+  width: 30%;
+  height: 80%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 100px 20px;
+  position: relative;
+  align-items: start;
+}
   .about-one .content .heading{
     text-align: start;
     display: flex;
@@ -69,7 +81,7 @@
     height: 8px;
     width: 60px;
     background-color: #12A1BE;
-    margin-top: 10%;
+    margin-top: 15%;
   }
   .about-one .process{
     display: flex;
@@ -226,6 +238,7 @@ background-position: center;
 background-size: cover;
     position: relative;
     margin-top: 10%;
+    margin-bottom: 10%;
   }
   .about-three::before {
     content: '';
