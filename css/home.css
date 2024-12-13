@@ -340,8 +340,13 @@ nav a:hover::after {
   height: 350px;
   /* background: rgb(28,59,80);
 background: linear-gradient(90deg, rgba(28,59,80,1) 0%, rgba(85,137,185,1) 35%); */
-background: rgb(28,59,80);
-background: linear-gradient(95deg, rgba(28,59,80,1) 16%, rgba(85,137,185,1) 35%);
+/* background: rgb(28,59,80);
+background: linear-gradient(95deg, rgba(28,59,80,1) 16%, rgba(85,137,185,1) 35%); */
+background: linear-gradient(
+      204deg,
+      rgba(18, 161, 190, 1) 21%,
+      rgba(0, 0, 0, 1) 89%
+    );
 }
 .heading-parent {
   display: flex;
