@@ -1,0 +1,208 @@
+ 
+ .project-section{
+    margin-bottom: 5em;
+ }
+ .project_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .project_heading{
+    font-size: 100px;
+    text-align: center;
+    font-weight: 700;
+    position: absolute;
+    color: #00000013;
+}
+ .project_upper_section{  
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+ }
+ .project_upper_section_right{
+    width: 59%;
+    padding: 1em 2em 1em 2em;
+    padding-right: 2em;
+    border-top: 1em solid #12a1be;
+    border-bottom: 1em solid #12a1be;
+    border-left: 1em solid #12a1be;
+ }
+.project_upper_section_right h1{
+    font-family: cinzel_heading_font;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 700;
+    /* color: linear-gradient(
+        204deg,
+        rgba(18, 161, 190, 1) 21%,
+        rgba(0, 0, 0, 1) 89%
+      ); */
+      background: linear-gradient(to right, rgba(18, 161, 190, 1) 21%, 
+      rgba(18, 161, 190, 1) 21%, #00050f, #00060e); 
+            -webkit-text-fill-color: transparent; 
+            -webkit-background-clip: text; 
+}
+.project_upper_section_right p{
+    text-align: justify;
+}
+
+.project_section_2_01{
+    background: linear-gradient(
+        204deg,
+        rgba(18, 161, 190, 1) 21%,
+        rgba(0, 0, 0, 1) 89%
+      );
+      height: 15em;
+      margin-bottom: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+.project_section_2 h1{
+    color: #fff;
+    font-weight: 700;
+    font-family:cinzel_heading_font ;
+}
+
+.iframe_div{
+    width: 20%;
+}
+.iframe_div img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.project_section_3{
+    width: 100%;
+    position: relative;
+    height: 700px;
+    overflow-y: auto;
+    margin: 0;
+    
+}
+.project_section_3::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+}
+.project_section_3 h2{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+.card{
+    position: sticky;
+    top: 0;
+    background: transparent;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.card:nth-child(1){
+    top: 0px;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    border: none;
+}
+.card:nth-child(2){
+    top: 20px;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    border: none;
+}
+.card:nth-child(3){
+    top: 40px;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    border: none;
+}
+.card:nth-child(4){
+    top: 60px;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    border: none;
+}
+.card:nth-child(5){
+    top: 10px;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    border: none;
+}
+.card:nth-child(4) img{
+    width: 112%;
+}
+.project_img{
+    width: 100%;
+}
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    /* border-radius: 12%; */
+}
+.card-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    padding-top: 5em;
+    text-align: justify;
+    padding-left: 6em;
+}
+.card-content h2{
+    background: linear-gradient(to right, rgba(18, 161, 190, 1) 21%, 
+      rgba(18, 161, 190, 1) 21%, #00050f, #00060e); 
+            -webkit-text-fill-color: transparent; 
+            -webkit-background-clip: text; 
+   
+}
+
+.card h2 {
+    font-size: 3em;
+    margin: 10px 0;
+    color: #333;
+}
+.card p {
+    font-size: 1em;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+.card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: black; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.card button:hover {
+    background-color: #0056b3;
+} 
+
+
+.project_section_3{
+    width: 100% !important;
+   
+}
+
+
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+
