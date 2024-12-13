@@ -54,13 +54,8 @@ footer .wave{
     top: -46px;
     left: 0;
     width: 100%;
-<<<<<<< HEAD
     height: 100px;
-    background: url("../images/wave.png");
-=======
-    height: 46px;
-    background: url("/images/wave01.svg");
->>>>>>> a1d9c2b45a31d84ce4da52ce327ead0f0c607a36
+    background: url("../images/wave01.svg");
     background-size: 1000px 100px;
 }
 footer .wave#wave1{
@@ -76,13 +71,13 @@ footer .wave#wave2{
     animation: animateWave_02 3s linear infinite;
 }
 footer .wave#wave3{
-    z-index: 1000;
+    z-index: 2;
     opacity: 0.2;
     bottom: 15px;
     animation: animateWave 3s linear infinite;
 }
 footer .wave#wave4{
-    z-index: 999;
+    z-index: 1;
     opacity: 0.7;
     bottom: 20px;
     animation: animateWave_02 3s linear infinite;
@@ -110,6 +105,8 @@ footer .wave#wave4{
     display: flex;
     gap: 15%;
     align-items: center;
+    position: relative;
+    z-index: 10000;
 }
 .footer_logo{
   display: flex;
