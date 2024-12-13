@@ -340,7 +340,9 @@ background-size: cover;
     height: 2px;
     background-color: #12A1BE;
   }
-  
+  #foot_content{
+    margin-top: 10%;
+  }
 
 
 
