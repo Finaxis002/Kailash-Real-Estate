@@ -83,7 +83,7 @@ body {
 }
 .main_vinayam img{
     margin-top: 10%;
-    z-index: 1;
+    z-index: 2;
     width: 63%;
     height: 475px;
     filter: drop-shadow(8px 8px 16px  rgba(0, 0, 0, 0.8));
@@ -94,7 +94,7 @@ body {
     font-size: 50px;
     font-weight: 700;
     font-family:cinzel_heading_font; 
-    z-index: 1000;
+    z-index: 2;
     margin-left: 55%;
     color: white;
     position: absolute;
