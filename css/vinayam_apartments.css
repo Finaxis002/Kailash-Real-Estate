@@ -5,7 +5,7 @@ body {
     
 }
 .vinayam_2{
-    height: 700px;
+    height: 250vh;
     margin-bottom: 70px;
 }
 .main_vinayam{
@@ -102,3 +102,173 @@ body {
 .main_vinayam h2{
     margin-top: 10%;
 }
+.vinayam_apart_contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10em;
+  /* width: 100%; */
+  margin-top: 10%;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 4em;
+  height: 80vh;
+  background-color: white;
+  border-radius: 3em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+}
+/* .vinayam_apart_contact img{
+   height: auto;
+   max-width: 100%;
+} */
+.contact-form {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  font-family: cinzel_heading_font;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+  
+}
+
+.contact-form label {
+  font-weight: 500;
+  display: block;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 5px;
+}
+.contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .contact-form textarea {
+      resize: none;
+      height: 100px;
+    }
+
+    .contact-form button {
+      background: #12a1be;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .contact-form button:hover {
+      background: #0056b3;
+    }
+    .upper_form_group{
+      display: flex;
+      gap: 2.5em;
+    }
+    .cloud{
+      height: 100px;
+      position: absolute;
+    }
+    .updown-animation{
+      animation-name: infiniteupdown;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+      transition: all .3s;
+      height: 300px;
+      max-width: 100%;
+      z-index: 500;
+      position: relative;
+    }
+    @keyframes infiniteupdown{
+      0%{
+        transform: translateY(0px);
+      }
+      50%{
+        transform: translateY(-40px);
+      }
+      100%{
+        transform: translateY(0px);
+      }
+    }
+
+    .vinayam_apartments_about_us{
+      display: flex;
+      justify-content: center;
+    }
+    .vinayam_apartments_about_us_upper{
+      position: relative;
+    }
+    
+    .vinayam_apartments_about_us_upper img{
+      width: 700px;
+      height: auto;
+      object-fit: cover;
+      margin-left: -100px;
+    }
+    .about_3d{
+      position: absolute;
+      z-index: 1000;
+      width: 130%;
+     height: 600px;
+     margin-top: -410px;
+     object-fit: cover;
+     margin-left: 10px;
+     filter: drop-shadow(8px 8px 16px  rgba(0, 0, 0, 0.8));
+    }
+    .vinayam_apartments_about_us_lower{
+      width: 40%;
+      margin-top: 5em;
+      position: relative;
+    }
+    .vinayam_apartments_about_us_lower h1{
+      font-weight: 700;
+      font-family: cinzel_heading_font;
+      font-size: 70px;
+      padding-bottom: .2em;
+      background: linear-gradient(to right, rgba(18, 161, 190, 1) 21%, 
+      rgba(18, 161, 190, 1) 21%, #00050f, #00060e); 
+            -webkit-text-fill-color: transparent; 
+            -webkit-background-clip: text; 
+    }
+    .vinayam_apartments_about_us_lower p{
+      text-align: justify;
+      line-height: 2em;
+      padding-bottom: 2em;
+    }
+    .line_after_about_text{
+      width: 15em;
+      border-top: .3em solid #12a1be;
+      padding-bottom: .5em;
+    }
+    .Kailash_static_heading{
+      font-size: 100px;
+    text-align: center;
+    font-weight: 700;
+     position: absolute; 
+    color: #00000013;
+    transform: rotate(-35deg);
+    margin-top: 45%;
+    margin-left: 20%;
+    font-family: railway ;
+    }
