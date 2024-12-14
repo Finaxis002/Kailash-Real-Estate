@@ -1,0 +1,258 @@
+section {
+  height: 100vh;
+  position: relative;
+}
+
+.one {
+  background: url(../images/image20.webp);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+.one .content2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  /* background-color: red; */
+  height: 100%;
+  padding: 10px 0px;
+}
+.one .content2 h1 {
+  font-size: 4rem;
+  text-align: center;
+  background: linear-gradient(
+    204deg,
+    rgba(18, 161, 190, 1) 21%,
+    rgba(0, 0, 0, 1) 89%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-family: cinzel_heading_font;
+  font-weight: 900;
+}
+
+.one img {
+  height: 64vh;
+  position: absolute;
+  z-index: 10;
+  margin-top: 17%;
+  filter: drop-shadow(0px 40px 16px rgba(0, 0, 0, 0.432));
+}
+.two {
+  /* background-color: yellow; */
+  display: flex;
+}
+.two .img2 {
+  height: 64vh;
+  position: relative;
+  /* background-color: blue; */
+  margin-top: 10%;
+}
+.two .img2 img {
+  height: 64vh;
+  position: relative;
+  opacity: 0;
+  z-index: 1;
+  transition: 0;
+}
+.two .big-circle {
+  position: absolute;
+  border: 100px solid transparent;
+  border-radius: 50%;
+  color: white;
+  width: 600px;
+  height: 600px;
+  text-align: center;
+  margin-top: 1%;
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(to bottom, #12a1be 0%, #000000 100%) border-box;
+  margin-left: 75%;
+}
+
+.contactForm {
+  position: absolute;
+  padding: 70px 50px;
+  padding-left: 20px;
+  margin-left: 55%;
+  width: 40%;
+  height: 80%;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #00000025;
+  margin-top: 3%;
+  background: rgba(255, 255, 255, 0.651); /* Transparent background */
+  backdrop-filter: blur(10px); /* Blurs the background behind the div */
+  -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
+  border: 1px solid rgba(255, 255, 255, 0.651); /* Subtle border for glassy look */
+  border-radius: 16px; /* Rounded corners for a smooth effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.116); /* Optional: Drop shadow for depth */
+  z-index: 10;
+}
+
+.contactForm .form-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+.contactForm .form-box .inputbox {
+  position: relative;
+  margin-bottom: 35px;
+  padding: 0px 30px;
+}
+.contactForm .form-box .inputbox .w50 {
+  width: 47%;
+}
+.contactForm .form-box .inputbox .w100 {
+  width: 100% !important;
+}
+.contactForm .form-box .inputbox input,
+.contactForm .form-box .inputbox textarea {
+  width: 100%;
+  resize: none;
+  padding: 5px 0px;
+  font-size: 18px;
+  color: #333;
+  background-color: transparent;
+  font-weight: 300;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #777;
+}
+.contactForm .form-box .inputbox textarea {
+  height: 60px;
+}
+.contactForm .form-box .inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 30px;
+  font-size: 16px;
+  font-weight: 300;
+  transition: 0.3s;
+  pointer-events: none;
+}
+.contactForm .form-box .inputbox input:focus ~ span,
+.contactForm .form-box .inputbox input:valid ~ span,
+.contactForm .form-box .inputbox textarea:focus ~ span,
+.contactForm .form-box .inputbox textarea:valid ~ span {
+  transform: translateY(-20px);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: transform 0.2s ease, font-size 0.2s ease, letter-spacing 0.2s ease;
+}
+
+.contactForm .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.three {
+  background-color: #ffffff;
+  display: flex;
+}
+
+.three .content {
+  width: 40%;
+  height: 60%;
+  /* background-color: #f70000; */
+  position: relative;
+  z-index: 10;
+  left: 2%;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-right: 100px;
+  padding-left: 40px;
+  gap: 2rem;
+}
+
+.three .content h1 {
+  font-size: 4rem;
+  color: #000;
+  font-weight: 800;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  font-family: cinzel_heading_font;
+  background: linear-gradient(
+    204deg,
+    rgba(18, 161, 190, 1) 21%,
+    rgba(0, 0, 0, 1) 89%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.three .content h1::before {
+  content: "";
+  height: 150px;
+  width: 3px;
+  background: #12a1be;
+  margin-right: 15px;
+}
+
+.three .content p {
+  font-size: 18px;
+  color: #000;
+  text-align: start;
+}
+.three .content ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.three .content ul li {
+    list-style: none;
+    flex: 0 0 47%;
+    max-width: 50%;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background: rgba(25, 142, 165, 0.884); 
+    color: #fff;
+    padding: 9px;
+    border-radius: 50px;
+    gap: 2rem;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+}
+.three .content ul li i {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  color: #12a1be;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0px 3px rgba(0, 0, 0, 0.075);
+  font-size: 20px;
+}
+.three .hand {
+  height: 100%;
+  width: 50%;
+}
+.three .hand img {
+  height: 60vh;
+  margin-top: 23%;
+  position: relative;
+  z-index: 1;
+}

@@ -1,13 +1,16 @@
 .main-jagannath-puri .one{
-    height: 100vh;
     overflow: hidden;
   background: url(../images/jagnnath2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-
+.main-jagannath-puri section{
+  height: 100vh;
+}
+a{
+  text-decoration: none !important;
+}
 .main-jagannath-puri .one .content1{
     /* background-color: red; */
     position: relative;
@@ -149,4 +152,431 @@
     margin-top: 10%;
 }
 
+.two{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.two::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  /* background-color: rgb(255, 208, 0); */
+}
 
+.two .container{
+  position: relative;
+  min-width: 1100px;
+  min-height: 550px;
+}
+
+.two .container .contactInfo{
+  position: absolute;
+  top: 40px;
+  width: 400px;
+  height: calc(100% - 80px);
+  z-index: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 20px 25px #0000001e;
+  background: #12A1BE;
+}
+.two .container .contactInfo .info-title{
+  color: #fff;
+  font-size: 26px;
+}
+.two .container .contactInfo .info-details li {
+  text-align: justify;
+  display: flex;
+  align-items: baseline;
+  gap: 0px;
+}
+.two .container .contactInfo .info-details li a{
+  font-size: 17px;
+  text-align: justify; /* Specifically applies justification to the anchor text */
+  display: block; 
+  padding-left: 5px;
+}
+.two .container .contactInfo .info-details{
+  padding: 20px ;
+  list-style: none;
+    margin: 0px 0px;
+    padding-left: 0;
+}
+.two .container .contactInfo .social-icons {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-left: -20%;
+  margin-top: 11%;
+}
+.two .container .contactForm{
+  position: absolute;
+  padding: 70px 50px;
+  padding-left: 250px;
+  margin-left: 150px;
+  width: calc(100% - 150px);
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #00000025;
+}
+
+.two .container .contactForm .form-box{
+ position: relative;
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ padding-top: 30px;
+}
+.two .container .contactForm .form-box .inputbox {
+    position: relative;
+    margin-bottom: 35px;
+    padding: 0px 30px;
+}
+.two .container .contactForm .form-box .inputbox .w50{
+  width: 47%;
+}
+.two .container .contactForm .form-box .inputbox .w100{
+  width: 100% !important;
+}
+.two .container .contactForm .form-box .inputbox input,
+.two .container .contactForm .form-box .inputbox textarea{
+  width: 100%;
+  resize: none;
+  padding: 5px 0px;
+  font-size: 18px;
+  color: #333;
+  border-bottom: 1px solid #777;
+  font-weight: 300;
+  outline: none;
+}
+.two .container .contactForm .form-box .inputbox textarea{
+  height: 120px;
+}
+.two .container .contactForm .form-box .inputbox span{
+  position: absolute;
+  left: 0;
+  padding: 5px 30px;
+  font-size: 16px;
+  font-weight: 300;
+  transition: 0.3s;
+  pointer-events: none;
+}
+.two .container .contactForm .form-box .inputbox input:focus ~ span,
+.two .container .contactForm .form-box .inputbox input:valid ~ span,
+.two .container .contactForm .form-box .inputbox textarea:focus ~ span,
+.two .container .contactForm .form-box .inputbox textarea:valid ~ span {
+  transform: translateY(-20px);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: transform 0.2s ease, font-size 0.2s ease, letter-spacing 0.2s ease;
+}
+.two .container .contactForm .form-box  .button-86 {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.two .container .contactForm .form-box  .button-86::after,
+.two .container .contactForm .form-box  .button-86::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all 0.4s;
+}
+
+.two .container .contactForm .form-box .button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #166879;
+  border-radius: 10px;
+}
+
+.two .container .contactForm .form-box .button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+.two .container .contactForm  .button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.three{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.three .content{
+  width: 40%;
+  height: 60%;
+  /* background-color: #f70000; */
+  position: absolute;
+  z-index: 10;
+  left: 2%;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-right: 100px;
+  padding-left: 40px;
+  gap: 2rem;
+  background: rgba(255, 255, 255, 0.651); /* Transparent background */
+  backdrop-filter: blur(10px); /* Blurs the background behind the div */
+  -webkit-backdrop-filter: blur(10px); /* Safari compatibility */
+  border: 1px solid rgba(255, 255, 255, 0.651); /* Subtle border for glassy look */
+  border-radius: 16px; /* Rounded corners for a smooth effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.116); /* Optional: Drop shadow for depth */
+}
+
+.three .big-circle {
+  position: absolute;
+  border: 100px solid transparent;
+  border-radius: 50%;
+  color: white;
+  width: 650px;
+  height: 650px;
+  text-align: center;
+  margin-top: 6%;
+  background: linear-gradient(#ffffff, #ffffff) padding-box, linear-gradient(to bottom, #12A1BE 0%, #000000 100%) border-box;
+  margin-left: -100%;
+  z-index: 1;
+}
+.three .content .button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #12A1BE;
+  border-radius: 10px;
+}
+
+.three .container1 .content .button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #12a1be3b;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+.three .content .button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.three .content .button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+.three .content h1{
+  font-size: 3rem;
+  color: #000;
+  font-weight: 800;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  font-family:  cinzel_heading_font;
+  background: linear-gradient(
+      204deg,
+      rgba(18, 161, 190, 1) 21%,
+      rgba(0, 0, 0, 1) 89%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.three .content h1::before {
+  content: '';
+  height: 70px; /* Adjust the height of the line */
+  width: 3px; /* Adjust the width of the line */
+  background: #12A1BE; /* Line color */
+  margin-right: 15px; /* Space between the line and the text */
+}
+
+.three .content p{
+  font-size: 18px;
+  color: #000;
+  text-align: start;
+}
+
+.three .phone{
+  width: 20%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/phone.png);
+  background-size: cover;
+  background-position: center;
+  margin-top: 23%;
+  position: relative;
+  z-index: 100000;
+  overflow: hidden;
+  margin-left: 20%;
+  filter: drop-shadow(2px 4px 6px #0000003b);
+}
+
+.three .phone .content {
+  width: 80%;
+  height: 20%;
+  background-color: rgb(255 255 255);
+  padding: 20px;
+  margin-left: -0.8rem;
+  position: relative;
+  margin-top: 13%;
+  border-radius: 0px;
+  gap: 0px;
+  box-shadow: none;
+}
+.three .phone .content h2{
+  font-size: 20px
+}
+.three .phone .content p{
+  font-size: 14px;
+}
+
+.three .phone .images{
+  width: 80%;
+  height: 60%;
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  margin-bottom: 5%;
+  border-radius: 0px 0px 30px 30px;
+  z-index: 10;
+  padding: 0px 5px;
+}
+.three .phone .images img{
+  width: 100%;
+  height: 25%;
+  object-fit: cover;
+  position: relative;
+  border-radius: 10px;
+  opacity: 1 !important;
+}
+.three .phone .nav-div{
+  border-radius: 50px;
+  width: 85%;
+  height: 8%;
+  margin-bottom: 5%;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.three .phone .nav-div ul{
+  width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* background: red; */
+    position: relative;
+    padding: 0px;
+    margin-top: 5%;
+}
+.three .phone .nav-div ul li{
+  display: flex;
+  flex-direction: column;
+  color: #1c6d7e;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+.three .phone .nav-div ul li i{
+  font-size: 12px;
+}
+.three .phone .nav-div ul li p{
+  font-size: 10px;
+  margin-bottom: 0px;
+}
+.three .image{
+  /* background-color: red; */
+    width: 25%;
+    height: 100%;
+    margin-right: -24%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.three .image img{
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+.three .nav-div{
+  width: 100%;
+  background-color: #ffffff;
+  height: 3rem;
+  margin-top: -14%;
+  border-radius: 50px 50px 0px 0px;
+  box-shadow: 0px 0px 10px #0000003b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.three .image .nav-div .circle {
+  width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #12a1be;
+    margin-top: -13%;
+    border: 5px solid #fff;
+    box-shadow: 0px 0px 10px #0000008a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+}

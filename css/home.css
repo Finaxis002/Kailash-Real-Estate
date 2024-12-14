@@ -27,12 +27,16 @@
   font-family: raleway;
   cursor:default;
 }
+a{
+  text-decoration: none !important;
+}
 html,
 body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
   font-family: raleway;
+  scroll-behavior: smooth;
 }
 h1,
 h2,
@@ -152,7 +156,7 @@ li {
   transform: translate(0%, 0%);
   width: 100%;
   height: 100%;
-  background: #030303;
+  background: #12a1beea;
   border-radius: 10px;
 }
 
@@ -189,7 +193,7 @@ li {
 header {
   backdrop-filter: -webkit;
   color: #fff;
-  padding: 20px 40px;
+  padding: 5px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
