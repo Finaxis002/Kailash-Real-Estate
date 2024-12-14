@@ -1,27 +1,31 @@
 @font-face {
   font-family: myFirstFont;
-  src: url(/fonts/Madelican.otf);
+  src: url(../fonts/Madelican.otf);
 }
 @font-face {
   font-family: rusticRoadway;
-  src: url(/fonts/RusticRoadway.otf);
+  src: url(../fonts/RusticRoadway.otf);
 }
 @font-face {
   font-family: cinzel_heading_font;
-  src: url(/fonts/Cinzel-Black.woff2);
-  src: url(/fonts/Cinzel-Bold.woff2);
-  src: url(/fonts/Cinzel-Regular.woff2);
+  src: url(../fonts/Cinzel-Black.woff2);
+  src: url(../fonts/Cinzel-Bold.woff2);
+  src: url(../fonts/Cinzel-Regular.woff2);
 }
 @font-face {
   font-family: raleway;
-  src: url(/fonts/Raleway-VariableFont_wght.woff2);
+  src: url(../fonts/Raleway-VariableFont_wght.woff2);
 }
-
+@font-face {
+  font-family: headline;
+  src: url(../fonts/Headlines-Bold.otf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: raleway;
+  cursor:default;
 }
 html,
 body {
@@ -189,11 +193,48 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
+  /* background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); */
+  z-index: 10;
+  position: relative;
 }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+    background-color: #f9f9f9;
+    min-width: 230px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-left: -53%;
+    padding: 40px 0px;
+}
+
+.dropdown-content a {
+  color: #000 !important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover a {
+  color: #0056b3; /* Highlight main link */
+}
+
 .logo {
   font-size: 24px;
   font-weight: bold;
@@ -210,8 +251,8 @@ header {
   font-weight: 700;
   margin-bottom: 0;
 }
-.logo h5{
-    font-size: 0.8rem;
+.logo h5 {
+    font-size: 1.35rem;
     font-family: cinzel_heading_font;
     font-weight: 500;
 }
@@ -266,6 +307,9 @@ nav a:hover::after {
 .auth-links .signup:hover {
   background-color: #e6c200;
 }
+
+
+
 /*button */
 
 .btn-stylish {
@@ -340,13 +384,11 @@ nav a:hover::after {
   height: 350px;
   /* background: rgb(28,59,80);
 background: linear-gradient(90deg, rgba(28,59,80,1) 0%, rgba(85,137,185,1) 35%); */
-/* background: rgb(28,59,80);
-background: linear-gradient(95deg, rgba(28,59,80,1) 16%, rgba(85,137,185,1) 35%); */
 background: linear-gradient(
-      204deg,
-      rgba(18, 161, 190, 1) 21%,
-      rgba(0, 0, 0, 1) 89%
-    );
+  204deg,
+  rgba(18, 161, 190, 1) 21%,
+  rgba(0, 0, 0, 1) 89%
+);
 }
 .heading-parent {
   display: flex;
@@ -813,6 +855,8 @@ background: linear-gradient(
 }
 
 .box {
+  --a: 8deg;
+  transition: .4s;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -829,7 +873,10 @@ background: linear-gradient(
   border: 1px solid rgba(255, 255, 255, 0.3);
   transition: all 0.5s ease-in-out;
 }
-
+.box:hover {
+  --i: -1;
+  -webkit-mask-position: 0 0;
+}
   
 
 .circle {
@@ -975,6 +1022,7 @@ main{
     border-radius: 1em;
     padding:2em ;
     background-color: rgba(0, 0, 0, 0.808);
+    
   }
   .checkpoint p{
     line-height: 27px;
