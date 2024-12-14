@@ -43,7 +43,7 @@
     z-index: 1;
 }
 .about-one .content {
-  /* background-color: red; */
+ 
   width: 30%;
   height: 80%;
   z-index: 1;
@@ -58,7 +58,7 @@
     display: flex;
     flex-direction: column;
     height: 60%;
-    /* background-color: yellow; */
+   
   }
   .about-one .content .heading h2{
      font-size: 40px;
@@ -89,14 +89,14 @@
     align-items: start;
   }
   .about-one .process h3{
-    /* background-color: red; */
+   
     font-weight: 600;
     color: #12A1BE;
     font-size: 2rem;
   }
 
   .about-one .h4 {
-    /* background-color: red; */
+  
     display: flex;
     gap: 20px;
     padding: 20px 10px;
@@ -141,8 +141,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.74); /* Black overlay with 50% opacity */
-    z-index: 1; /* Ensure it appears on top of the background */
+    background: rgba(0, 0, 0, 0.74); 
+    z-index: 1;
 }
   .about-two .content1{
     /* background-color: red; */
@@ -176,15 +176,15 @@
 
   @keyframes spinner {
     50% {
-      transform: rotate(180deg); /* Correct syntax */
+      transform: rotate(180deg); 
     }
     100% {
-      transform: rotate(360deg); /* Correct syntax */
+      transform: rotate(360deg); 
     }
   }
 
   .about-two .content2{
-    /* background-color: yellow; */
+   
     width: 60%;
     height: 100%;
     z-index: 1;
@@ -199,7 +199,7 @@
     gap: 40px;
   }
   .about-two .content2 .numbers{
-    /* background-color: red; */
+    
     padding: 40px 0px;
     display: flex;
     flex-direction: column;
@@ -247,13 +247,13 @@ background-size: cover;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.74); /* Black overlay with 50% opacity */
-    z-index: 1; /* Ensure it appears on top of the background */
+    background: rgba(0, 0, 0, 0.74); 
+    z-index: 1; 
 }
   .mission-vision{
     width: 100%;
     height: 50%;
-    /* background-color: yellow; */
+   
     padding: 20px;
     position: relative;
     display: flex;
@@ -305,7 +305,7 @@ background-size: cover;
     color: #fff;
   }
   .mission-vision .lines{
-    /* background-color: pink; */
+
     display: flex;
     width: 50%;
     height: 80%;
