@@ -81,12 +81,13 @@
     height: 8px;
     width: 60px;
     background-color: #12A1BE;
-    margin-top: 15%;
+    margin-top: 10%;
   }
   .about-one .process{
     display: flex;
     flex-direction: column;
     align-items: start;
+    gap: 2rem;
   }
   .about-one .process h3{
    
