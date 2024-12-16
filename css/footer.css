@@ -102,7 +102,7 @@ footer .wave#wave4{
 
 .footer_content{
     display: flex;
-    gap: 15%;
+    gap: 4%;
     align-items: center;
     position: relative;
     z-index: 10000;
@@ -146,4 +146,23 @@ footer .wave#wave4{
 .footer .footer_button{
     background-color: rgb(255, 123, 0);
 }
+.footer_about_heading li:nth-of-type(1){
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 500;
+    padding-top: 10%;
+}
+.footer_about_heading li:nth-of-type(4){
+    font-size: 10px;
+}
+.footer_about_heading, .footer_address{
+    color: #fff;
+}
 
+.footer_follow p{
+    font-size: 1.25rem; 
+    color: #fff;
+    padding-left: 18%;
+    font-weight: 500;
+    padding-top: 10%;
+}

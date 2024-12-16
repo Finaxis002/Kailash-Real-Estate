@@ -13,6 +13,11 @@
   src: url(../fonts/Cinzel-Regular.woff2);
 }
 @font-face {
+  font-family: cinzel_regular_font;
+  src: url(../fonts/Cinzel-Regular.woff2);
+}
+
+@font-face {
   font-family: raleway;
   src: url(../fonts/Raleway-VariableFont_wght.woff2);
 }
@@ -195,8 +200,8 @@ header {
   color: #fff;
   padding: 5px 40px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 23%;
   /* background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px); */
@@ -273,6 +278,8 @@ nav a {
   text-decoration: none;
   position: relative;
   transition: color 0.3s ease;
+  font-family:cinzel_regular_font ;
+  font-weight: 700;
 }
 nav a:hover {
   color: #12a0bd;
