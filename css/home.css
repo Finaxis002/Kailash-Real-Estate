@@ -393,8 +393,7 @@ nav a:hover::after {
   position: relative;
   border-radius: 30px;
   height: 350px;
-  /* background: rgb(28,59,80);
-background: linear-gradient(90deg, rgba(28,59,80,1) 0%, rgba(85,137,185,1) 35%); */
+  
 background: linear-gradient(
   204deg,
   rgba(18, 161, 190, 1) 21%,
@@ -908,6 +907,7 @@ background: linear-gradient(
   width: 100%;
   height: 159%;
   z-index: 1;
+  opacity: 1;
   /* box-shadow: 0px 0px 10px #0000001a; */
 }
 
@@ -1089,23 +1089,7 @@ main{
   
   
   
-  @media screen and (ma-width:1150px){
-    .timeline{
-      width: 80vw;
-    }
-    .timeline .checkpoint{
-      width: 100%;
-      transform: none;
-      padding-left: 0;
-      padding-right: 0;
-    }
-    .timeline .checkpoint .line{
-      right: initial;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    
-  }
+  
   
 
   /* css for after-journey */
@@ -1200,3 +1184,166 @@ main{
     margin-top: 5px;
   }
   
+
+
+
+
+
+  /* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+/* journey section */
+@media screen and (max-width:1024px){
+  .timeline{
+    width: 80vw;
+  }
+  .timeline .checkpoint{
+    width: 100%;
+    transform: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .timeline .checkpoint .line{
+    right: initial;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+}
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 10px 15px;
+  }
+  nav {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    color: #12A1BE;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    padding: 10px 20px;
+    color: #000;
+    text-align: center;
+  }
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    background-color: #f9f9f9;
+  }
+  .dropdown a{
+    padding-left: 37%;
+  }
+
+  /* hero section responsive */
+  .hero-bg{
+    flex-direction: row;
+  }
+  .image_div img{
+    display: none;
+    visibility: hidden;
+  }
+  .heading-parent{
+    width: 100%;
+  }
+  .heading-1{
+    font-size: 30px;
+  }
+
+   /* project section responsive */
+   .projects{
+    display: inline-block;
+   }
+   .project{
+    width: 100%;
+   }
+   .content{
+    width: 100%;
+   }
+   .project2{
+    margin-top: 5%;
+    margin-bottom: 10%;
+   }
+   .carousel .list .item .author{
+    padding-left: 80px;
+   }
+   .carousel .list .item .topic{
+    font-size: 3em;
+    padding-left: 80px;
+   }
+
+
+   /* counting section */
+   .counting{
+    height: 100rem;
+   }
+   .boxes{
+    flex-direction: column;
+   }
+   .box{
+    width: 100%;
+   }
+
+   /* journey section */
+   .timeline{
+    padding:0 15px 0 15px;
+   }
+   .checkpoint:nth-child(odd){
+    padding-left: 0em;
+    transform: none;
+    margin-top: 100px;
+  }
+  .checkpoint:nth-child(even){
+    padding-right: 0em;
+    transform: none;
+    margin-top: 150px;
+    margin-bottom: 51px;
+  }
+  .main h1{
+    margin: 0;
+  }
+
+  /* after journey section */
+  .after-journey{
+    height: 90vh;
+  }
+   .after-journey-img{
+    display: none;
+   }
+   .after-journey .content{
+    margin-left: 0;
+    margin-top: 12%;
+    background-color: #ede7e7de;
+   }
+   .after-journey h1{
+    z-index: 10;
+    font-size: 3rem;
+   }
+}

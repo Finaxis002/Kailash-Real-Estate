@@ -1,7 +1,11 @@
  footer{
     position: relative;
     width: 100%;
-    background: #12a1be;
+    background: linear-gradient(
+      204deg,
+      rgba(18, 161, 190, 1) 21%,
+      rgba(0, 0, 0, 1) 89%
+    );
     min-height: 95px;
     padding: 2px 50px 6px 50px;
     display: flex;
@@ -54,7 +58,7 @@ footer .wave{
     left: 0;
     width: 100%;
     height: 100px;
-    background: url("../images/wave01.svg");
+    /* background: url("../images/wave_footer.png"); */
     background-size: 1000px 100px;
 }
 footer .wave#wave1{
@@ -165,4 +169,33 @@ footer .wave#wave4{
     padding-left: 18%;
     font-weight: 500;
     padding-top: 10%;
+}
+
+/* responsive design */
+@media screen and (max-width: 768px){
+   footer{
+    height: 30%;
+    padding-left: 10px;
+   }
+    .footer_content{
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+    footer .wave{
+        background: none;
+    }
+    .footer_about_heading{
+        padding-left: 1rem;
+    }
+    .footer_follow{
+        padding-left: 0;
+    }
+    .footer_address{
+        padding-left: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    .footer_follow p{
+        padding-left: 1rem;
+    }
 }

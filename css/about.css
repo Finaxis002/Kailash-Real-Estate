@@ -23,7 +23,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 80px;
+    
+    padding: 20px 2px 20px 80px;
     position: relative;
     z-index: 2;
   }
@@ -81,7 +82,7 @@
     height: 8px;
     width: 60px;
     background-color: #12A1BE;
-    margin-top: 10%;
+    margin-top: 13%;
   }
   .about-one .process{
     display: flex;
@@ -343,5 +344,59 @@ background-size: cover;
   }
   
   
+  /* responsive design */
+  @media screen and (max-width: 768px) {
 
-  
+    .about-one {
+      flex-direction: column;
+      height: 133vh;
+    }
+    .about-one .image{
+      width: 90%;
+      display: inline-block;
+      padding: 0;
+      margin-top: 20%;
+    }
+    .about-one .content{
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .about-one .process{
+      margin-top: 12%;
+    }
+    .about-one .h4 {
+      flex-direction: column;
+    }
+    .line{
+      top: 64%;
+    }
+
+    /* about-2nd-section */
+    .about-two{
+      flex-direction: column;
+      height: 124vh;
+    }
+    .about-two .content1{
+      padding: 20px 0px 0px 20px;
+    }
+    .about-two .content2{
+      width: 95%;
+    }
+
+    .about-two .content2 p{
+      margin-top: -166px;
+      padding-left: -17px;
+      width: 100%;
+    }
+    .about-two .content2 .numbering{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    
+    
+
+}

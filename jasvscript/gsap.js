@@ -141,7 +141,7 @@ gsap.defaults({ease: "none"});
 const tl = gsap.timeline({repeat:Infinity , repeatDelay:1, yoyo:true})
 tl.to(".animate_text", {
     duration: 2,
-    text: "Set New Standards",
+    text: "Setting New Standards",
     ease: "power2.out",
   });
 

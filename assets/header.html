@@ -9,7 +9,14 @@
       </div>
       
     </div>
-    <nav>
+
+     <!-- Hamburger Menu -->
+     <div class="hamburger" onclick="toggleMenu()">
+      &#9776;
+    </div>
+
+
+    <nav id="nav-menu">
         <a href="index.html">Home</a>
         <a href="About.html">About Us</a>
         <div class="dropdown">
@@ -29,3 +36,9 @@
         >LET'S TALK</a
       > -->
 </header>
+<script>
+  function toggleMenu() {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.toggle('active');
+  }
+</script>

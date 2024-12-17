@@ -83,8 +83,8 @@ body {
 .main_vinayam img{
     margin-top: 10%;
     z-index: 2;
-    width: 60%;
-    height: 520px;
+    width: 50%;
+    height: 530px;
     filter: drop-shadow(8px 8px 16px  rgba(0, 0, 0, 0.8));
 }
 .main_vinayam h1,
