@@ -580,3 +580,23 @@ a{
     color: #fff;
     font-size: 14px;
 }
+
+@media screen and (max-width: 768px){
+  .main-jagannath-puri .one .flex{
+    flex-direction: column;
+  }
+  .main-jagannath-puri .one .content1 h1{
+    font-size: 3rem;
+  }
+  .main-jagannath-puri .one .img-content{
+    margin-left: 3%;
+    margin-top: 118%;
+    height: 58%;
+    width: 94%;
+  }
+  
+.main-jagannath-puri .one .img-content img{
+  margin-top: -20%;
+  margin-left: 43px;
+}
+}
