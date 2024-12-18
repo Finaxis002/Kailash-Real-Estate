@@ -216,6 +216,10 @@
 }
 
 /* Book */
+#next-btn, #prev-btn{
+    display: flex;
+    z-index: 10000;
+}
 
 .book-container{
   width: 60%;
