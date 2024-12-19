@@ -4,3 +4,10 @@ $(document).ready(function () {
     
     console.log("jsquery is working")
 });
+
+
+//header reponsive js 
+function toggleMenu() {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.toggle('active');
+  }

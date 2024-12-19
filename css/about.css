@@ -1,6 +1,4 @@
 
-  
-  
   .about-one{
     height: 100vh;
     background-color: rgb(252, 252, 252);
@@ -23,7 +21,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 80px;
+    
+    padding: 20px 2px 20px 80px;
     position: relative;
     z-index: 2;
   }
@@ -197,7 +196,7 @@
 
   .about-two .content2 .numbering{
     display: flex;
-    gap: 40px;
+    
   }
   .about-two .content2 .numbers{
     
@@ -208,17 +207,18 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-   width: 20%;
+    width: 56%;
   }
   
   .about-two .counting-section{
+    display: inline-block;
     gap: 5px;
   }
+  
   .about-two .content2 .numbers h2{
     font-size: 4rem;
     font-family: sans-serif;
     color: #fff;
-    
   }
   .about-two .content2 .numbers h3{
     color: #fff;
@@ -235,8 +235,8 @@
     gap: 40px;
     z-index: 2;
     background: url(../images/timeline-11.jpg);
-background-position: center;
-background-size: cover;
+    background-position: center;
+    background-size: cover;
     position: relative;
     margin-top: 10%;
     margin-bottom: 10%;
@@ -343,5 +343,90 @@ background-size: cover;
   }
   
   
+  /* responsive design */
+  @media screen and (max-width: 768px) {
 
-  
+    .about-one {
+      flex-direction: column;
+      height: 133vh;
+    }
+    .about-one .image{
+      width: 90%;
+      display: inline-block;
+      padding: 0;
+      margin-top: 20%;
+    }
+    .about-one .content{
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .about-one .process{
+      margin-top: 12%;
+    }
+    .about-one .h4 {
+      flex-direction: column;
+    }
+    .line{
+      top: 64%;
+    }
+
+    /* about-2nd-section */
+    .about-two{
+      flex-direction: column;
+      height: 152vh;
+    }
+    .about-two .content1{
+      padding: 20px 0px 0px 20px;
+    }
+    .about-two .content2{
+      width: 95%;
+    }
+
+    .about-two .content2 p{
+      margin-top: -166px;
+      width: 102%;
+      text-align: justify;
+    }
+    .about-two .content2 .numbering{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .para1{
+      padding-top: 149px; 
+      padding-left: 10px;
+      position: absolute
+    }
+    .para2{
+      padding-top: 147px;
+    }
+    .para3{
+      padding-top: 141px;
+    }
+    .para4{
+      padding-top: 142px;
+    }
+    .about-three{
+      height: 157vh;
+    }
+    .about-three .mission-vision .content{
+      width: 99%;
+      height: 71%;
+    }
+    .about-three .content h2{
+      font-size: 6rem;
+    }
+    .about-three .content p{
+      text-align: justify;
+    }
+    .mission-vision .line3{
+      width: 0;
+    }
+    .mission-vision .lines{
+      width: 6%;
+    }
+    
+}
+

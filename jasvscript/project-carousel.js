@@ -60,10 +60,19 @@ let numOfPapers = 4;
 let maxLocation = numOfPapers + 1;
 
 function openBook() {
-  book.style.transform = "translateX(50%)";
-  prevBtn.style.transform = "translateX(-180px)";
-  nextBtn.style.transform = "translateX(180px)";
+  const screenWidth = window.innerWidth;
+  
+  if (screenWidth <= 768) { // Mobile screen breakpoint
+    book.style.transform = "translateX(67px)";
+    prevBtn.style.transform = "translateX(-67px)";
+    nextBtn.style.transform = "translateX(67px)";
+  } else {
+    book.style.transform = "translateX(50%)";
+    prevBtn.style.transform = "translateX(-180px)";
+    nextBtn.style.transform = "translateX(180px)";
+  }
 }
+
 
 function closeBook(isAtBeginning) {
   if (isAtBeginning) {

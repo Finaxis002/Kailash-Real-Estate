@@ -36,7 +36,7 @@ gsap.registerPlugin(ScrollTrigger);
 const timeline = gsap.timeline({
   scrollTrigger: {
     trigger: ".two", 
-    start: "center 0%", 
+    start: "center 10%", 
     end: "70%", 
     scrub: 2, 
     // markers: true,
