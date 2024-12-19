@@ -350,6 +350,12 @@
       flex-direction: column;
       height: 133vh;
     }
+    .about-one h1 {
+      font-size: 6rem;
+      font-weight: 700;
+      color: #31303013;
+    }
+
     .about-one .image{
       width: 90%;
       display: inline-block;
