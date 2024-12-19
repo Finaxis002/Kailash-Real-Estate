@@ -225,6 +225,20 @@
     .submit-button{
         margin: 10px 0px;
     }
-    
+    .contact-one{
+        height: 157vh;
+    }
+    .box-wrapper{
+        margin-left: 1%;
+    }
+    .info-wrap{
+        margin-left: 2%;
+    }
+    .form-group{
+        margin-left: 3%;
+    }
+    .form-wrap{
+        margin-left: 2%;
+    }
    
 }

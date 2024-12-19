@@ -271,3 +271,56 @@ body {
     margin-left: 20%;
     font-family: railway ;
     }
+
+
+    /* reponsive design */
+    @media screen and (max-width: 768px){
+      .main_vinayam img {
+        margin-top: -2%;
+        width: 80%;
+        height: 608px;
+        margin-left: -21px;
+      }
+      .main_vinayam h1{
+        margin-top: -104px;
+        font-size: 24px;
+      }
+      .main_vinayam h2{
+        font-size: 23px;
+      }
+      .vinayam_apartments_about_us_upper > img:nth-child(2){
+        margin-top: -308px;
+        margin-left: 23px;
+      }
+      .vinayam_apartments_about_us_upper{
+        margin-top: 71px;
+      }
+      .vinayam_apartments_about_us_upper > img:nth-child(1){
+        margin-left: 1px;
+      }
+      .vinayam_apartments_about_us_lower{
+        width: 90%;
+        margin-left: 16px;
+      }
+      .Kailash_static_heading{
+        margin-top: 39%;
+        margin-left: -16%;
+      }
+
+      .vinayam_apart_contact{
+        flex-direction: column;
+        border-radius: 0;
+        box-shadow: none;
+        gap: 1rem;
+      }
+      .vinayam_apartments_about_us {
+        flex-direction: column;
+      }
+      .cloud-box{
+        margin-top: 90%;
+      }
+      .vinayam_apart_contact .contact-form{
+        margin-bottom: 98px;
+      }
+     
+    }

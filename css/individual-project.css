@@ -375,7 +375,7 @@
         left: 46%;
     }
     .main-project .content p{
-        width: 167%;
+        width: 197%;
     }
     .container1 .content{
         left: 28%;
@@ -408,9 +408,7 @@
     #next-btn{
         transform: translateX(50px);
     }
-    .main-project .content p {
-        width: 100%;
-    }
+    
     .page2 .contact-one{
         overflow: visible;
         padding-left: 10px;;
