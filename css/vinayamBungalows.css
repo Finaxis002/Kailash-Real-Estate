@@ -257,3 +257,61 @@ section {
   position: relative;
   z-index: 1;
 }
+
+
+@media screen and (max-width: 768px){
+  .hero-image, .hero-image2{
+    display: none;
+  }
+  .hand img{
+    display: none;
+  }
+  .one img {
+    height: 25vh;
+    margin-top: 41%;
+    z-index: 1;
+   
+  }
+  .one .content2 h1{
+    font-size: 3rem;
+  }
+  .one{
+    height: 50vh;
+  }
+  .two section{
+    height: 82vh;
+    margin-top: 24%;
+  }
+  .three section{
+    height: 78vh;
+  }
+  .three{
+    flex-direction: column;
+  }
+  .contactForm{
+    width: 92%;
+    height: 61%;
+    margin-left: 1%;
+  }
+  .three .content{
+    width: 138%;
+    left: 0;
+  }
+  .three .content h1{
+    margin-left: -54px;
+    font-size: 3rem;
+  }
+  .three .content p{
+    width: 96%;
+  }
+  .three .content ul{
+    display: inline-block;
+  }
+  .three .content ul li{
+    max-width: 118%;
+  }
+  .three .content p{
+    width: 78%;
+    text-align: justify;
+  }
+}
