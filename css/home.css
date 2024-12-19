@@ -57,6 +57,7 @@ li {
 }
 .main {
   transition: background-color 0.3s ease; /* Smooth transition */
+  /* background-color: #fff; */
   
 }
 #smcircle {
@@ -380,6 +381,7 @@ nav a:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #fff;
 
   /* margin-left: 8rem; */
 }
@@ -1228,6 +1230,9 @@ main{
 }
 
 @media screen and (max-width: 768px) {
+  #smcircle{
+    display: none;
+  }
   .hamburger {
     display: block;
     color: #12A1BE;
@@ -1317,6 +1322,10 @@ main{
    /* journey section */
    .timeline{
     padding:0 15px 0 15px;
+   }
+   .checkpoint{
+    transition: 0.1s all;
+    delay:0;
    }
    .checkpoint:nth-child(odd){
     padding-left: 0em;

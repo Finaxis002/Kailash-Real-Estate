@@ -107,8 +107,8 @@ function animateCounter(counter, targetValue) {
   let currentValue = { value: 0 }; // Starting value
   gsap.to(currentValue, {
     value: targetValue,
-    duration: 2, // Animation duration
-    ease: "power1.out",
+    duration: 1, // Animation duration
+    ease: "power0.out",
     onUpdate: function () {
       counter.textContent = Math.floor(currentValue.value); // Update the counter text
     },
@@ -121,11 +121,13 @@ document.querySelectorAll(".counter").forEach((counter) => {
 
   if (!isNaN(targetValue)) {
     ScrollTrigger.create({
-      trigger: counter,
-      start: "top 5%", 
+      trigger: '.counting',
+      start: "top 80%",
+      end: "top 30%",
       onEnter: function () {
         animateCounter(counter, targetValue); 
       },
+      duration: 1.5,
     });
   } else {
     console.error("Invalid data-target value for counter: ", counter);
@@ -162,11 +164,11 @@ checkpoints.forEach((checkpoint) => {
   gsap.from(checkpoint.firstElementChild, {
     height: 0,
     scrollTrigger: {
-      trigger: checkpoint,
-      start: "center center",
-      end: "bottom+=340 center",
+      trigger: 'journey5',
+      start: "top 80%",
+      end: "top 30%",
       scrub: true,
-     
+    //  markers:true,
     },
   });
 });
@@ -214,3 +216,4 @@ images.forEach((img, i) => {
     },
   });
 });
+
