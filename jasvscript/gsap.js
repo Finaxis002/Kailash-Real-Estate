@@ -117,14 +117,14 @@ function animateCounter(counter, targetValue) {
 
 // Loop through all counter elements and create a ScrollTrigger for each
 document.querySelectorAll(".counter").forEach((counter) => {
-  const targetValue = parseInt(counter.getAttribute("data-target"), 10); // Get the target value from data attribute
+  const targetValue = parseInt(counter.getAttribute("data-target"), 10); 
 
   if (!isNaN(targetValue)) {
     ScrollTrigger.create({
-      trigger: counter, // Trigger animation when the counter comes into view
-      start: "top 90%", // Start animation when 90% of the viewport is above the counter
+      trigger: counter,
+      start: "top 5%", 
       onEnter: function () {
-        animateCounter(counter, targetValue); // Call the animateCounter function
+        animateCounter(counter, targetValue); 
       },
     });
   } else {
