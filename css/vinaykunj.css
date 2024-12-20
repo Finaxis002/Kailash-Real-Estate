@@ -60,7 +60,7 @@
     font-weight: 500;
 }
 .vinay_about_section .vinay_heading_div p{
-    padding-left: 0%;
+    padding-left: 5%;
     padding-top: 0%;
 }
 
@@ -131,6 +131,10 @@
     padding-top: 2%;
 
 }
+.vinay_about_section .vinay_heading_div {
+    padding-left: 10%;
+    padding-top: 0%;
+}
 
 }
     
@@ -154,4 +158,5 @@
         margin-left: 12%;
         margin-right: 52px;
     }
+    
 }
