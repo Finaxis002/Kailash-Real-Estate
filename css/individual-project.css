@@ -430,7 +430,7 @@
         height: 35vh;
     }
     .page2 .carousel-wrap{
-        max-width: 96%;
+        max-width: 100%;
     }
     .contact-one{
         gap: 0;
@@ -450,4 +450,18 @@
     .page2 .contact-one{
         overflow: auto;
     } */
+
+   
+}
+
+@media(max-width:400px){
+    .page3{
+        margin-top: -30vh;
+    }
+    .page2 .slider{
+        aspect-ratio: 0;
+      }
+      footer{
+        margin-top: 50%;
+    }
 }

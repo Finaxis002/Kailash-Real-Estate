@@ -1214,13 +1214,13 @@ main{
     position: absolute;
     height: 110vh;
   }
-  .images img:nth-child(1){
+  .journey5 .images img:nth-child(1){
     margin-top: 110vh;
   }
-  .images img:nth-child(2){
+  .journey5 .images img:nth-child(2){
     margin-top: 220vh;
   }
-  .images img:nth-child(3){
+  .journey5 .images img:nth-child(3){
     margin-top: 330vh;
   }
   

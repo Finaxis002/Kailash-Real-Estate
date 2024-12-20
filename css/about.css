@@ -452,5 +452,8 @@
   .about-two .content2 {
     margin-top: 25%;
 }
+.about-two {
+  height: 200vh;
+}
 }
 
