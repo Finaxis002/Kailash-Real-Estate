@@ -1,30 +1,30 @@
-.vinay_hero_section{
-    display: flex;
-    margin-bottom: 2%;
+.vinay_hero_section {
+  display: flex;
+  margin-bottom: 2%;
 }
-.vinay_hero_section img{
-    position: relative;
-    z-index: 1;
+.vinay_hero_section img {
+  position: relative;
+  z-index: 1;
 }
 
-.vinay_heading_div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-top: 20px solid #12A1BE; 
-    border-left: 20px solid #12A1BE; 
-    border-bottom: 20px solid #12A1BE;
-    padding: 1%;
-    margin-left: -32%;
-    height: 27.18rem;
-    margin-right: 13px;
-    text-align: justify;
+.vinay_heading_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 20px solid #12a1be;
+  border-left: 20px solid #12a1be;
+  border-bottom: 20px solid #12a1be;
+  padding: 1%;
+  margin-left: -32%;
+  height: 27.18rem;
+  margin-right: 13px;
+  text-align: justify;
 }
-.vinay_heading_div h1{
-    padding-left: 32%;
-    font-size: 70px;
-    font-weight: 900;
-    background: linear-gradient(
+.vinay_heading_div h1 {
+  padding-left: 32%;
+  font-size: 70px;
+  font-weight: 900;
+  background: linear-gradient(
     204deg,
     rgba(18, 161, 190, 1) 21%,
     rgba(0, 0, 0, 1) 89%
@@ -33,130 +33,122 @@
   -webkit-text-fill-color: transparent;
 }
 
-.vinay_heading_div p{
-    padding-left: 38%;
-    padding-top: 2%;
+.vinay_heading_div p {
+  padding-left: 38%;
+  padding-top: 2%;
 }
-.vinay_about_section{
-    display: flex;
-    margin-bottom: 2%;
-    position: relative;
-    height: 80vh;
-    align-items: center;
-    justify-content: center;
-    gap: 10rem;
+.vinay_about_section {
+  display: flex;
+  margin-bottom: 2%;
+  position: relative;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
 }
-.vinay_about_section .vinay_heading_div{
-    border: none;
-    width: 40%;
-      
-    margin-left: 0;
+.vinay_about_section .vinay_heading_div {
+  border: none;
+  width: 40%;
 
+  margin-left: 0;
 }
-.vinay_about_section .vinay_heading_div h2{
-    font-size: 4rem;
-    text-transform: uppercase;
-    color: #000000;
-    font-weight: 500;
+.vinay_about_section .vinay_heading_div h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 500;
 }
-.vinay_about_section .vinay_heading_div p{
-    padding-left: 5%;
-    padding-top: 0%;
+.vinay_about_section .vinay_heading_div p {
+  padding-left: 5%;
+  padding-top: 0%;
 }
 
 .vinay_about_section .border_div {
-    width: 22rem;
-    height: 28rem;
-    position: absolute;
-    margin-top: -28.5%;
-    margin-left: 10%;
-    background: linear-gradient(204deg, rgba(18, 161, 190, 1) 21%, rgba(0, 0, 0, 1) 89%);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: exclude;
-    mask-composite: exclude;
-    padding: 2rem;
-    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%);
+  width: 22rem;
+  height: 28rem;
+  position: absolute;
+  margin-top: -28.5%;
+  margin-left: 10%;
+  background: linear-gradient(
+    204deg,
+    rgba(18, 161, 190, 1) 21%,
+    rgba(0, 0, 0, 1) 89%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: exclude;
+  mask-composite: exclude;
+  padding: 2rem;
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%);
 }
 
-.vinay_img_div{
-    
-   
+.vinay_img_div {
 }
-.vinay_img_div img{
-    width: 30rem;
-    object-fit: cover;
-    position: relative;
-    z-index: 2;
-    height: 20rem;
-    margin-left: -12%;
+.vinay_img_div img {
+  width: 30rem;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  height: 20rem;
+  margin-left: -12%;
 }
 
-
-
-@media(max-width:768px){
-    .vinay_about_section{
-        flex-direction: column;
+@media (max-width: 768px) {
+  .vinay_about_section {
+    flex-direction: column;
     gap: 10px;
     height: 120vh;
-    }
-    .vinay_about_section .vinay_heading_div {
-        border: none;
-        width: 95%;
-        text-align: center;
-        align-items: center;
-    }
-    .vinay_about_section .border_div{
-        margin-top: 4%;
-        margin-left: 4%;
-        width: 21rem;
-    }
-    .vinay_img_div {
-        margin-top: 30%;
-        margin-bottom: 30%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .vinay_img_div img {
-        width: 17rem;
-    }
-    .vinay_contact_section{
-        height: 100vh;
-        margin-bottom: 10%;
-}  
-.vinay_heading_div p{
+  }
+  .vinay_about_section .vinay_heading_div {
+    border: none;
+    width: 95%;
+    text-align: center;
+    align-items: center;
+  }
+  .vinay_about_section .border_div {
+    margin-top: 4%;
+    margin-left: 4%;
+    width: 21rem;
+  }
+  .vinay_img_div {
+    margin-top: 30%;
+    margin-bottom: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .vinay_img_div img {
+    width: 17rem;
+  }
+  .vinay_contact_section {
+    height: 100vh;
+    margin-bottom: 10%;
+  }
+  .vinay_heading_div p {
     padding-left: 38%;
     padding-top: 2%;
-
-}
-.vinay_about_section .vinay_heading_div {
+  }
+  .vinay_about_section .vinay_heading_div {
     padding-left: 10%;
     padding-top: 0%;
+  }
+  .vinay_hero_section {
+    flex-direction: column;
+  }
+  .vinay_heading_div h1 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 0;
+  }
+  .vinay_heading_div p {
+    padding-left: 11%;
+    text-align: justify;
+  }
+  .vinay_heading_div {
+    height: 20rem;
+    margin-left: 12%;
+    margin-right: 52px;
+  }
 }
 
-}
-    
-
-/* responsive design */
-@media (max-width: 768px){
-    .vinay_hero_section{
-        flex-direction: column;
-    }
-    .vinay_heading_div h1{
-        font-size: 30px;
-        font-weight: 700;
-        padding-left: 0;
-    }
-    .vinay_heading_div p{
-        padding-left: 11%;
-        text-align: justify;
-    }      
-    .vinay_heading_div{
-        height: 20rem;
-        margin-left: 12%;
-        margin-right: 52px;
-    }
-    
-}
