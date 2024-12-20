@@ -289,8 +289,11 @@ section {
     flex-direction: column;
     height: 60vh;
   }
+  .contactForm .form-box{
+    width: 22rem;
+  }
   .contactForm{
-    width: 92%;
+    width: 100%;
     height: 61%;
     margin-left: 1%;
   }
@@ -317,5 +320,12 @@ section {
   .three .content p{
     width: 78%;
     text-align: justify;
+  }
+  
+ 
+}
+@media(max-width:400px){
+  footer{
+    margin-top: 70%;
   }
 }
