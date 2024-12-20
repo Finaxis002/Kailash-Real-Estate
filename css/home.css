@@ -1206,6 +1206,24 @@ main{
   .timeline{
     width: 80vw;
   }
+  .images{
+    display: flex;
+    flex-direction: column;
+  }
+  .images img{
+    position: absolute;
+    height: 110vh;
+  }
+  .images img:nth-child(1){
+    margin-top: 110vh;
+  }
+  .images img:nth-child(2){
+    margin-top: 220vh;
+  }
+  .images img:nth-child(3){
+    margin-top: 330vh;
+  }
+  
   .timeline .checkpoint{
     width: 100%;
     transform: none;
@@ -1216,8 +1234,20 @@ main{
     right: initial;
     left: 50%;
     transform: translateX(-50%);
+    display: none;
   }
-  
+  .checkpoint:nth-child(even) .text::before {
+    display: none;
+}
+.checkpoint:nth-child(odd) .text::before {
+  display: none;
+}
+.checkpoint:nth-child(even) .text::after {
+  display: none;
+}
+.checkpoint:nth-child(odd) .text::after {
+  display: none;
+}
 }
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
