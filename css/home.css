@@ -1260,6 +1260,15 @@ main{
 }
 
 @media screen and (max-width: 768px) {
+  .main{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0px 20px;
+  }
+  .hero-section{
+    height: auto;
+  }
   #smcircle{
     display: none;
   }

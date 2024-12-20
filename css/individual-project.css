@@ -450,7 +450,9 @@
     .page2 .contact-one{
         overflow: auto;
     } */
-
+    .page2 .slider{
+        aspect-ratio: 0;
+      }
    
 }
 
