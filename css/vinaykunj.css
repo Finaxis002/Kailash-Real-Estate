@@ -31,10 +31,12 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-<<<<<<< HEAD
 }
 
-
+.vinay_heading_div p{
+    padding-left: 38%;
+    padding-top: 2%;
+}
 .vinay_about_section{
     display: flex;
     margin-bottom: 2%;
@@ -47,12 +49,19 @@
 .vinay_about_section .vinay_heading_div{
     border: none;
     width: 40%;
+      
+    margin-left: 0;
+
 }
 .vinay_about_section .vinay_heading_div h2{
     font-size: 4rem;
     text-transform: uppercase;
     color: #000000;
     font-weight: 500;
+}
+.vinay_about_section .vinay_heading_div p{
+    padding-left: 0%;
+    padding-top: 0%;
 }
 
 .vinay_about_section .border_div {
@@ -89,7 +98,7 @@
     .vinay_about_section{
         flex-direction: column;
     gap: 10px;
-    height: 100vh;
+    height: 120vh;
     }
     .vinay_about_section .vinay_heading_div {
         border: none;
@@ -103,7 +112,7 @@
         width: 21rem;
     }
     .vinay_img_div {
-        margin: 15% 0%;
+        margin-top: 30%;
         margin-bottom: 30%;
         width: 100%;
         display: flex;
@@ -116,7 +125,6 @@
     .vinay_contact_section{
         height: 100vh;
         margin-bottom: 10%;
-=======
 }  
 .vinay_heading_div p{
     padding-left: 38%;
@@ -124,10 +132,11 @@
 
 }
 
+}
     
 
 /* responsive design */
-@media screen and (max-width: 768px){
+@media (max-width: 768px){
     .vinay_hero_section{
         flex-direction: column;
     }
@@ -144,6 +153,5 @@
         height: 20rem;
         margin-left: 12%;
         margin-right: 52px;
->>>>>>> 233e752743229bb63766796e037de1fa8e810abf
     }
 }
