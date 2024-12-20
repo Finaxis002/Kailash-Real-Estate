@@ -463,22 +463,12 @@
       display: none;
     }
     .about-two .content1 img{
-      display: none;
+     width: 100px;
+     left: 15rem;
+     top: -4rem;
     }
     
 }
 
 
-@media(max-width:400px){
-  .about-two .content2 {
-    margin-top: 25%;
-}
-.about-two {
-  height: auto;
-  /* gap: 2rem; */
-}
-.about-two .content1 img{
-  display: none;
-}
-}
 
