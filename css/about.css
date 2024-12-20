@@ -386,9 +386,10 @@
     /* about-2nd-section */
     .about-two{
       flex-direction: column;
-      height: 152vh;
+      height: auto;
     }
     .about-two .content1{
+      height: auto;
       padding: 20px 0px 0px 20px;
     }
     .about-two .content2{
@@ -406,20 +407,20 @@
       align-items: center;
     }
     .para1{
-      padding-top: 149px; 
+      padding-top: 158px; 
       padding-left: 10px;
       position: absolute;
       margin-left: -29px;
     }
     .para2{
-      padding-top: 155px;
+      padding-top: 157px;
       padding-left: 10px;
     }
     .para3{
       padding-top: 151px;
     }
     .para4{
-      padding-top: 148px;
+      padding-top: 152px;
       padding-left: 26px;
     }
     .about-three{
@@ -441,6 +442,12 @@
     .mission-vision .lines{
       width: 6%;
     }
+    .mission-vision .line1{
+      display: none;
+    }
+    .about-two .content1 img{
+      display: none;
+    }
     
 }
 
@@ -453,7 +460,10 @@
     margin-top: 25%;
 }
 .about-two {
-  height: 200vh;
+  height: auto;
+}
+.about-two .content1 img{
+  display: none;
 }
 }
 
