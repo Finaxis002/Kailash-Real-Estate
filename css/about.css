@@ -470,15 +470,12 @@
 
 
 @media(max-width:400px){
-  .about-one .process {
-    margin: 30% 0%;
-  }
   .about-two .content2 {
     margin-top: 25%;
 }
 .about-two {
   height: auto;
-  gap: 2rem;
+  /* gap: 2rem; */
 }
 .about-two .content1 img{
   display: none;
