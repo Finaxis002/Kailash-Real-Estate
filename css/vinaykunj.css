@@ -1,0 +1,110 @@
+.vinay_hero_section{
+    display: flex;
+    margin-bottom: 2%;
+}
+.vinay_heading_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 10px solid #12A1BE; 
+    border-left: 10px solid #12A1BE; 
+    border-bottom: 10px solid #12A1BE;
+    padding: 1%;
+}
+.vinay_heading_div h1{
+    font-size: 70px;
+    font-weight: 900;
+    background: linear-gradient(
+    204deg,
+    rgba(18, 161, 190, 1) 21%,
+    rgba(0, 0, 0, 1) 89%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.vinay_about_section{
+    display: flex;
+    margin-bottom: 2%;
+    position: relative;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+.vinay_about_section .vinay_heading_div{
+    border: none;
+    width: 40%;
+}
+.vinay_about_section .vinay_heading_div h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 500;
+}
+
+.vinay_about_section .border_div {
+    width: 22rem;
+    height: 28rem;
+    position: absolute;
+    margin-top: -28.5%;
+    margin-left: 10%;
+    background: linear-gradient(204deg, rgba(18, 161, 190, 1) 21%, rgba(0, 0, 0, 1) 89%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: exclude;
+    mask-composite: exclude;
+    padding: 2rem;
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 10% 100%);
+}
+
+.vinay_img_div{
+    
+   
+}
+.vinay_img_div img{
+    width: 30rem;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    height: 20rem;
+    margin-left: -12%;
+}
+
+
+
+@media(max-width:768px){
+    .vinay_about_section{
+        flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+    }
+    .vinay_about_section .vinay_heading_div {
+        border: none;
+        width: 95%;
+        text-align: center;
+        align-items: center;
+    }
+    .vinay_about_section .border_div{
+        margin-top: 4%;
+        margin-left: 4%;
+        width: 21rem;
+    }
+    .vinay_img_div {
+        margin: 15% 0%;
+        margin-bottom: 30%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .vinay_img_div img {
+        width: 17rem;
+    }
+    .vinay_contact_section{
+        height: 100vh;
+        margin-bottom: 10%;
+    }
+}
