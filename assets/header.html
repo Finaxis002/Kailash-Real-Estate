@@ -1,44 +1,37 @@
 <header>
-    <div class="logo enlarge">
-      <div>
-        <img src="images/KR (6).png" alt="logo">
-      </div>
-      <div>
-        <h2>Kailash </h2>
-        <h5>Real Estate</h5>
-      </div>
-      
+  <div class="logo enlarge">
+    <div>
+      <img src="images/KR (6).png" alt="logo" />
     </div>
-
-     <!-- Hamburger Menu -->
-     <div class="hamburger" onclick="toggleMenu()">
-      &#9776;
+    <div>
+      <h2>Kailash</h2>
+      <h5>Real Estate</h5>
     </div>
+  </div>
 
+  <!-- Hamburger Menu -->
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
 
-    <nav id="nav-menu">
-        <a href="index.html">Home</a>
-        <a href="About.html">About Us</a>
-        <div class="dropdown">
-          <a href="project.html">Projects</a>
-          <div class="dropdown-content">
-            <a href="goldenNest.html">Golden Nest</a>
-            <a href="jagannathPuri.html">Jagannath Puri</a>
-            <a href="vinayamApartments.html">Vinayam Apartments</a>
-            <a href="vinayamBungalows.html">Vinayam Bungalows</a>
-          </div>
-        </div>
-        <a href="contact.html">Contact</a>
-    </nav>
-     <!-- <a
-        class="btn-stylish bg-gray-200 px-4 py-2 rounded-full hover:bg-gray-300" 
-        href="#"
-        >LET'S TALK</a
-      > -->
+  <nav id="nav-menu">
+    <a href="index.html">Home</a>
+    <a href="About.html">About Us</a>
+    <div class="dropdown">
+      <a href="project.html">Projects</a>
+      <div class="dropdown-content">
+        <a href="goldenNest.html">Golden Nest</a>
+        <a href="jagannathPuri.html">Jagannath Puri</a>
+        <a href="vinayamApartments.html">Vinayam Apartments</a>
+        <a href="vinayamBungalows.html">Vinayam Bungalows</a>
+      </div>
+    </div>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  
 </header>
 <script>
   function toggleMenu() {
-    const navMenu = document.getElementById('nav-menu');
-    navMenu.classList.toggle('active');
+    const navMenu = document.querySelector("#nav-menu");
+    navMenu.classList.toggle("active");
   }
 </script>

@@ -198,6 +198,9 @@
 }
 /* Responsive css */
 @media only screen and (max-width: 767px) {
+    .main-contact h1{
+        display: none;
+    }
     .box-wrapper{
         width: 100%;
     }
@@ -209,6 +212,7 @@
     }
     .info-wrap{
         border-radius: 30px 30px 0px 0px;
+        padding: 20px;
     }
     .form-wrap{
         border-radius: 0px 0px 30px 30px;
@@ -225,6 +229,20 @@
     .submit-button{
         margin: 10px 0px;
     }
-    
+    .contact-one{
+        height: 157vh;
+    }
+    .box-wrapper{
+        margin-left: 1%;
+    }
+    .info-wrap{
+        margin-left: 2%;
+    }
+    .form-group{
+        margin-left: 3%;
+    }
+    .form-wrap{
+        margin-left: 2%;
+    }
    
 }

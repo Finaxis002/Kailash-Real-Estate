@@ -582,21 +582,74 @@ a{
 }
 
 @media screen and (max-width: 768px){
+  .main-jagannath-puri .one{
+    height: 100vh;
+  }
   .main-jagannath-puri .one .flex{
     flex-direction: column;
   }
+  
   .main-jagannath-puri .one .content1 h1{
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .main-jagannath-puri .one .img-content{
     margin-left: 3%;
-    margin-top: 118%;
-    height: 58%;
+    margin-top: 96%;
+    height: 78%;
     width: 94%;
   }
-  
+  .three .content h1 {
+    width: 116%;
+  } 
 .main-jagannath-puri .one .img-content img{
   margin-top: -20%;
   margin-left: 43px;
+}
+.main-jagannath-puri .one .content1{
+  padding-left: 204px;
+}
+.main-jagannath-puri .three{
+  flex-direction: column;
+  height: 192vh;
+}
+.main-jagannath-puri .two {
+  height: 122vh;
+}
+.three .phone{
+  width: 63%;
+  height: 31%;
+  margin-top: 3%;
+}
+.three .image{
+  margin-top: 156%;
+  width: 65%;
+    height: 35%;
+}
+.three .image img{
+  margin-top: 114px;
+}
+
+.three .content{
+  width: 91%;
+    height: 30%;
+}
+.three .content p{
+  text-align: justify;
+  width: 111%;
+}
+.two{
+  flex-direction: column;
+}
+.two .container .contactInfo {
+  top: -162px;
+}
+.two .container .contactForm{
+  margin-left: 0px;
+    width: calc(38% - 10px);
+    padding: 30px 10px;
+    margin-top: 334px;
+}
+.two .container{
+  --bs-gutter-x: 0;
 }
 }
