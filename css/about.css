@@ -367,7 +367,10 @@
       padding-left: 15px;
       padding-right: 15px;
     }
-
+    .about-one .content p{
+      text-align: justify;
+      width: 98%;
+    }
     .about-one .process{
       margin-top: 12%;
     }
@@ -375,8 +378,10 @@
       flex-direction: column;
     }
     .line{
-      top: 64%;
+      top: 74%;
+      display: none;
     }
+
 
     /* about-2nd-section */
     .about-two{
@@ -403,16 +408,19 @@
     .para1{
       padding-top: 149px; 
       padding-left: 10px;
-      position: absolute
+      position: absolute;
+      margin-left: -29px;
     }
     .para2{
-      padding-top: 147px;
+      padding-top: 155px;
+      padding-left: 10px;
     }
     .para3{
-      padding-top: 141px;
+      padding-top: 151px;
     }
     .para4{
-      padding-top: 142px;
+      padding-top: 148px;
+      padding-left: 26px;
     }
     .about-three{
       height: 157vh;
