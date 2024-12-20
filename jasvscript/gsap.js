@@ -152,68 +152,77 @@ tl.to(".animate_text", {
 //TIMELINE SCRIPT
 gsap.registerPlugin(ScrollTrigger);
 
-const checkpoints = gsap.utils.toArray(".checkpoint");
-console.log("Checkpoints: ", checkpoints);
+// Function to check if the screen is mobile
+function isMobile() {
+  return window.innerWidth <= 768; // Adjust the breakpoint as per your needs
+}
 
-checkpoints.forEach((checkpoint) => {
-  if (!checkpoint.firstElementChild) {
-    console.error("Missing child in checkpoint: ", checkpoint);
-    return;
-  }
+// Only run animations if not on mobile
+if (!isMobile()) {
+  const checkpoints = gsap.utils.toArray(".checkpoint");
+  console.log("Checkpoints: ", checkpoints);
 
-  gsap.from(checkpoint.firstElementChild, {
-    height: 0,
-    scrollTrigger: {
-      trigger: 'journey5',
-      start: "top 80%",
-      end: "top 30%",
-      scrub: true,
-    //  markers:true,
-    },
+  checkpoints.forEach((checkpoint) => {
+    if (!checkpoint.firstElementChild) {
+      console.error("Missing child in checkpoint: ", checkpoint);
+      return;
+    }
+
+    gsap.from(checkpoint.firstElementChild, {
+      height: 0,
+      scrollTrigger: {
+        trigger: 'counting',
+        start: "top 80%",
+        end: "5% 30%",
+        pin: true,
+        duration: 0,
+        // markers: true,
+      },
+    });
   });
-});
 
-const checkpointTexts = gsap.utils.toArray(".text");
-console.log("Checkpoint Texts: ", checkpointTexts);
+  const checkpointTexts = gsap.utils.toArray(".text");
+  console.log("Checkpoint Texts: ", checkpointTexts);
 
-checkpointTexts.forEach((text) => {
-  if (!text.parentElement) {
-    console.error("Missing parent element for text: ", text);
-    return;
-  }
+  checkpointTexts.forEach((text) => {
+    if (!text.parentElement) {
+      console.error("Missing parent element for text: ", text);
+      return;
+    }
 
-  gsap.from(text, {
-    opacity: 0,
-    x: 100,
-    ease: "none",
-    scrollTrigger: {
-      trigger: text.parentElement,
-      start: "top+=200 90%",
-      end: "bottom+=340 20%",
-      toggleActions: "restart none none reverse",
-    },
+    gsap.from(text, {
+      opacity: 0,
+      x: 100,
+      ease: "none",
+      scrollTrigger: {
+        trigger: text.parentElement,
+        start: "top+=200 90%",
+        end: "bottom+=340 20%",
+        toggleActions: "restart none none reverse",
+        duration: 0,
+      },
+    });
   });
-});
 
-const images = document.querySelectorAll(".images img");
-console.log("Images: ", images);
+  const images = document.querySelectorAll(".images img");
+  console.log("Images: ", images);
 
-images.forEach((img, i) => {
-  const adjacentCheckpoint = img.parentElement.nextElementSibling?.children[i];
-  if (!adjacentCheckpoint) {
-    console.error("Invalid adjacentCheckpoint for image: ", img);
-    return;
-  }
+  images.forEach((img, i) => {
+    const adjacentCheckpoint = img.parentElement.nextElementSibling?.children[i];
+    if (!adjacentCheckpoint) {
+      console.error("Invalid adjacentCheckpoint for image: ", img);
+      return;
+    }
 
-  gsap.from(img, {
-    opacity: 0,
-    scrollTrigger: {
-      trigger: adjacentCheckpoint,
-      start: "top+=200 center",
-      end: "bottom+=340 center",
-      toggleActions: "restart none none reverse",
-     
-    },
+    gsap.from(img, {
+      opacity: 0,
+      scrollTrigger: {
+        trigger: adjacentCheckpoint,
+        start: "top+=200 center",
+        end: "bottom+=340 center",
+        toggleActions: "restart none none reverse",
+        duration: 0,
+      },
+    });
   });
-});
-
+}
