@@ -581,7 +581,7 @@ a{
     font-size: 14px;
 }
 
-@media screen and (max-width: 768px){
+@media (max-width: 768px){
   .main-jagannath-puri .one{
     height: 100vh;
   }
@@ -610,20 +610,21 @@ a{
 }
 .main-jagannath-puri .three{
   flex-direction: column;
-  height: 192vh;
+  height: 218vh;
 }
 .main-jagannath-puri .two {
-  height: 122vh;
+  height: 140vh;
 }
 .three .phone{
-  width: 63%;
-  height: 31%;
   margin-top: 3%;
+  width: 16rem;
+  height: 32rem;
+  padding: 20px 10px;
 }
 .three .image{
   margin-top: 156%;
   width: 65%;
-    height: 35%;
+  height: 30%;
 }
 .three .image img{
   margin-top: 114px;
