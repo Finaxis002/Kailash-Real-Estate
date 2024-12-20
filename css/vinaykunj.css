@@ -1,18 +1,27 @@
-.vinay_hero{
+.vinay_hero_section{
     display: flex;
     margin-bottom: 2%;
 }
+.vinay_hero_section img{
+    position: relative;
+    z-index: 1;
+}
+
 .vinay_heading_div{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    border-top: 10px solid #12A1BE; 
-    border-left: 10px solid #12A1BE; 
-    border-bottom: 10px solid #12A1BE;
+    border-top: 20px solid #12A1BE; 
+    border-left: 20px solid #12A1BE; 
+    border-bottom: 20px solid #12A1BE;
     padding: 1%;
+    margin-left: -32%;
+    height: 27.18rem;
+    margin-right: 13px;
+    text-align: justify;
 }
 .vinay_heading_div h1{
+    padding-left: 32%;
     font-size: 70px;
     font-weight: 900;
     background: linear-gradient(
@@ -22,4 +31,32 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}  
+.vinay_heading_div p{
+    padding-left: 38%;
+    padding-top: 2%;
+
+}
+
+    
+
+/* responsive design */
+@media screen and (max-width: 768px){
+    .vinay_hero_section{
+        flex-direction: column;
+    }
+    .vinay_heading_div h1{
+        font-size: 30px;
+        font-weight: 700;
+        padding-left: 0;
+    }
+    .vinay_heading_div p{
+        padding-left: 11%;
+        text-align: justify;
+    }      
+    .vinay_heading_div{
+        height: 20rem;
+        margin-left: 12%;
+        margin-right: 52px;
+    }
 }
