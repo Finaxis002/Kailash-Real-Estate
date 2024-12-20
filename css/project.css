@@ -255,4 +255,7 @@
     .card:nth-child(5) .card-content{
         padding-left: 0;
     }
+    .project_heading{
+        display: none;
+    }
 }
