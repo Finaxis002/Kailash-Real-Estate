@@ -1,0 +1,25 @@
+.vinay_hero{
+    display: flex;
+    margin-bottom: 2%;
+}
+.vinay_heading_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 10px solid #12A1BE; 
+    border-left: 10px solid #12A1BE; 
+    border-bottom: 10px solid #12A1BE;
+    padding: 1%;
+}
+.vinay_heading_div h1{
+    font-size: 70px;
+    font-weight: 900;
+    background: linear-gradient(
+    204deg,
+    rgba(18, 161, 190, 1) 21%,
+    rgba(0, 0, 0, 1) 89%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
