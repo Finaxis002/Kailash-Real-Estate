@@ -62,7 +62,7 @@ span,
 a,
 li {
   font-family: montserrat;
-  /* font-weight: 100; */
+   font-weight: 100; 
 }
 .main {
   transition: background-color 0.3s ease; /* Smooth transition */
@@ -1121,7 +1121,7 @@ main{
 
   .after-journey h1{
     font-size: 10rem;
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: 25px;
     color: #00000021;
   }
@@ -1137,7 +1137,7 @@ main{
   margin-top: -13%;
   margin-right: 85%;
   background: linear-gradient(#ffffff, #ffffff  ) padding-box,
-  linear-gradient(to bottom, #12A1BE 0%, #000000 100%) border-box
+  linear-gradient(to bottom, #13a7c5 0%, #000000 100%) border-box;
   }
   
   
