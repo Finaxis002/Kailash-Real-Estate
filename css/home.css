@@ -62,7 +62,7 @@ span,
 a,
 li {
   font-family: montserrat;
-  /* font-weight: 100; */
+   font-weight: 100; 
 }
 .main {
   transition: background-color 0.3s ease; /* Smooth transition */
@@ -1121,7 +1121,7 @@ main{
 
   .after-journey h1{
     font-size: 10rem;
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: 25px;
     color: #00000021;
   }
