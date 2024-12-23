@@ -327,14 +327,12 @@ section {
     text-align: justify;
   }
 .two{
-  height: 60vh;
+  height: 65vh;
 }
   .two .img2{
     display: none;
   }
-  .content2 img{
-    display: none;
-  }
+  
   
 
 }

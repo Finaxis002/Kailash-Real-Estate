@@ -93,11 +93,12 @@
   margin-left: -12%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (max-height: 1000px){
   .vinay_about_section {
     flex-direction: column;
     gap: 10px;
     height: 120vh;
+    margin-top: 15%;
   }
   .vinay_about_section .vinay_heading_div {
     border: none;
@@ -111,7 +112,7 @@
     width: 21rem;
   }
   .vinay_img_div {
-    margin-top: 30%;
+    margin-top: 50%;
     margin-bottom: 30%;
     width: 100%;
     display: flex;
@@ -123,7 +124,8 @@
   }
   .vinay_contact_section {
     height: 100vh;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
+    margin-top: 20%;
   }
   .vinay_heading_div p {
     padding-left: 38%;
@@ -149,6 +151,7 @@
     height: 20rem;
     margin-left: 12%;
     margin-right: 52px;
+    width: 85%;
   }
 }
 
