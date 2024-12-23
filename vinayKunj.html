@@ -80,16 +80,18 @@
             />
           </div>
           <div>
-            <form class="contact-form">
+            <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
               <h2>Contact Us</h2>
 
               <div class="upper_form_group">
                 <div class="form-group">
+                  <input type="hidden" name="access_key" value="c4241231-f369-4ca6-9d56-9528013e57e8">
                   <label for="first-name">First Name</label>
                   <input
                     type="text"
                     id="first-name"
                     name="first-name"
+                    class="contact-inputs"
                     placeholder="Enter your first name"
                     required
                   />
@@ -100,6 +102,7 @@
                     type="text"
                     id="last-name"
                     name="last-name"
+                    class="contact-inputs"
                     placeholder="Enter your last name"
                     required
                   />
@@ -113,6 +116,7 @@
                     type="email"
                     id="email"
                     name="email"
+                    class="contact-inputs"
                     placeholder="Enter your email"
                     required
                   />
@@ -123,6 +127,7 @@
                     type="tel"
                     id="phone"
                     name="phone"
+                    class="contact-inputs"
                     placeholder="Enter your phone number"
                     required
                   />
@@ -134,11 +139,12 @@
                 <textarea
                   id="message"
                   name="message"
+                  class="contact-inputs"
                   placeholder="Your message here..."
                   required
                 ></textarea>
               </div>
-              <button type="submit">Submit</button>
+              <button type="submit" class="submit-button">Submit</button>
             </form>
           </div>
         </div>

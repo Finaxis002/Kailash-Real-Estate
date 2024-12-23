@@ -25,6 +25,14 @@
   font-family: headline;
   src: url(../fonts/Headlines-Bold.otf);
 }
+@font-face{
+  font-family: montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face{
+  font-family: marcellus;
+  src: url(../fonts/Marcellus-Regular.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +48,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
-  font-family: raleway;
+  font-family: montserrat;
   scroll-behavior: smooth;
 }
 h1,
@@ -53,7 +61,8 @@ p,
 span,
 a,
 li {
-  font-size: raleway;
+  font-family: montserrat;
+  /* font-weight: 100; */
 }
 .main {
   transition: background-color 0.3s ease; /* Smooth transition */
@@ -171,7 +180,7 @@ li {
   width: 35px;
   height: 35px;
   background: #ffffff15;
-  backdrop-filter: blur(5px);
+  backdrop-filter: none;
   -webkit-backdrop-filter: blur(5px);
   border-radius: 50px;
 }
@@ -280,8 +289,8 @@ nav a {
   text-decoration: none;
   position: relative;
   transition: color 0.3s ease;
-  font-family:cinzel_regular_font ;
-  font-weight: 700;
+  font-family:montserrat;
+  font-weight: 200;
 }
 nav a:hover {
   color: #12a0bd;
@@ -410,10 +419,10 @@ background: linear-gradient(
   
 }
 .heading-1 {
-  font-family: cinzel_heading_font;
+  font-family: montserrat;
   font-weight: 600;
   padding-top: 1rem;
-  font-size: 40px;
+  font-size: 2rem;
   color: rgb(255, 123, 0);
   position: relative;
 }
@@ -425,7 +434,7 @@ background: linear-gradient(
   color: white;
 }
 .heading-3 {
-  font-family: cinzel_heading_font;
+  font-family: montserrat;
   font-weight: 400;
   padding-top: 1rem;
   font-size: 40px;
@@ -595,6 +604,7 @@ background: linear-gradient(
 .carousel .list .item .author {
   font-weight: bold;
   letter-spacing: 10px;
+  font-family:marcellus ;
 }
 .carousel .list .item .title,
 .carousel .list .item .topic {
@@ -602,7 +612,7 @@ background: linear-gradient(
   font-weight: bold;
   line-height: 1.3em;
   color: #fff;
-  font-family: cinzel_heading_font;
+  font-family:montserrat ;
 }
 
 .carousel .list .item .buttons {
@@ -971,12 +981,12 @@ main{
   main h1{
     margin: 0.3em;
     font-size: 4em;
-    font-family: cinzel_heading_font
+    font-family: marcellus;
   }
   main h2{
     margin-bottom: 0.1em;
     font-size: 2em;
-    font-family: cinzel_heading_font
+    font-family: marcellus;
   }
   .step_num{
     margin-left: 0;
@@ -1332,6 +1342,7 @@ main{
   }
   .heading-1{
     font-size: 30px;
+    font-family: marcellus;
   }
 
    /* project section responsive */

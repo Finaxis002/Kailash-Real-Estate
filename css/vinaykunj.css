@@ -19,6 +19,7 @@
   height: 27.18rem;
   margin-right: 13px;
   text-align: justify;
+ 
 }
 .vinay_heading_div h1 {
   padding-left: 32%;
@@ -31,6 +32,7 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: marcellus;
 }
 
 .vinay_heading_div p {
@@ -49,7 +51,6 @@
 .vinay_about_section .vinay_heading_div {
   border: none;
   width: 40%;
-
   margin-left: 0;
 }
 .vinay_about_section .vinay_heading_div h2 {
