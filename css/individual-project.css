@@ -90,7 +90,7 @@
     display: flex;
     align-items: start;
     justify-content: start;
-    font-family:  cinzel_heading_font;
+    font-family: marcellus; 
 }
 .main-project .content .to{
     color: #12a1be2a;
@@ -110,7 +110,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 3rem;
-    font-family:  cinzel_heading_font;
+    font-family: marcellus;
     /* width: 18rem; */
     padding-left: 0;
   }
@@ -365,7 +365,8 @@
     }
     .main-project .content .to {
         font-size: 10rem;
-        margin-left: 47%;
+        margin-top: -23%;
+        margin-left: 37%;
     }
     .page1{
         height: 140vh;
