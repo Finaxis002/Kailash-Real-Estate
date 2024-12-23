@@ -348,13 +348,20 @@
 
     .about-one {
       flex-direction: column;
-      height: 133vh;
+      height: auto;
     }
     .about-one h1 {
       font-size: 6rem;
       font-weight: 700;
       color: #31303013;
     }
+    .about-two .content1 img {
+      width: 100px;
+      animation: spinner 8s linear infinite;
+      position: relative;
+    left: 15rem;
+      top: -4rem;
+  }
 
     .about-one .image{
       width: 90%;
@@ -364,16 +371,14 @@
     }
     .about-one .content{
       width: 100%;
-      padding-left: 15px;
-      padding-right: 15px;
+      padding: 30px 20px;
+      gap: 2rem;
     }
     .about-one .content p{
       text-align: justify;
       width: 98%;
     }
-    .about-one .process{
-      margin-top: 12%;
-    }
+    
     .about-one .h4 {
       flex-direction: column;
     }
@@ -391,9 +396,19 @@
     .about-two .content1{
       height: auto;
       padding: 20px 0px 0px 20px;
+      height: auto;
+      width: auto;
+      gap: 20px;
     }
     .about-two .content2{
       width: 95%;
+    }
+    .about-two .content2 .numbering{
+      gap: 1.5rem;
+    }
+    .about-two .content2 .numbers{
+      padding: 10px;
+      height: auto;
     }
 
     .about-two .content2 p{
@@ -424,11 +439,13 @@
       padding-left: 26px;
     }
     .about-three{
-      height: 157vh;
+      height: auto;
     }
     .about-three .mission-vision .content{
-      width: 99%;
-      height: 71%;
+      width: auto;
+      height: auto;
+      padding: 40px 20px;
+      gap: 2rem;
     }
     .about-three .content h2{
       font-size: 6rem;
@@ -442,12 +459,6 @@
     .mission-vision .lines{
       width: 6%;
     }
-    .mission-vision .line1{
-      display: none;
-    }
-    .about-two .content1 img{
-      display: none;
-    }
     
 }
 
@@ -460,10 +471,7 @@
     margin-top: 25%;
 }
 .about-two {
-  height: auto;
-}
-.about-two .content1 img{
-  display: none;
+  height: 200vh;
 }
 }
 
