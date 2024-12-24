@@ -33,6 +33,11 @@
   font-family: marcellus;
   src: url(../fonts/Marcellus-Regular.ttf);
 }
+@font-face{
+  font-family: logo_font;
+  src: url(../fonts/Dealoras-Rp6zo.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -62,7 +67,6 @@ span,
 a,
 li {
   font-family: montserrat;
-   font-weight: 100; 
 }
 .main {
   transition: background-color 0.3s ease; /* Smooth transition */
@@ -212,9 +216,6 @@ header {
   display: flex;
   align-items: center;
   gap: 23%;
-  /* background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px); */
   z-index: 10;
   position: relative;
 }
@@ -267,18 +268,18 @@ header {
 }
 .logo h2 {
   padding: 20px 0px 0px 0px;
-  font-size: 2rem;
-  font-family: cinzel_heading_font;
+  font-size: 4rem;
+  font-family: logo_font;
   font-weight: 700;
-  margin-bottom: 0;
+  margin-bottom: -17px;
 }
 .logo h5 {
-    font-size: 1.35rem;
-    font-family: cinzel_heading_font;
+    font-size: 2.50rem;
+    font-family:'marcellus' ;
     font-weight: 500;
 }
 .logo img {
-  height: 80px;
+  height: 107px;
   object-fit: cover;
 }
 nav {
@@ -422,7 +423,7 @@ background: linear-gradient(
 }
 .heading-1 {
   font-family: montserrat;
-  font-weight: 600;
+  font-weight: 900;
   padding-top: 1rem;
   font-size: 2rem;
   color: rgb(255, 123, 0);
@@ -614,7 +615,7 @@ background: linear-gradient(
   font-weight: bold;
   line-height: 1.3em;
   color: #fff;
-  font-family:montserrat ;
+  font-family:cinzel_heading_font ;
 }
 
 .carousel .list .item .buttons {
