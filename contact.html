@@ -55,28 +55,29 @@
                 </ul>
             </div>
             <div class="form-wrap">
-                <form action="#" method="POST">
-                    <h2 class="form-title">Send us a message</h2>
-                    <div class="form-fields">
-                        <div class="form-group">
-                            <input type="text" class="fname" placeholder="First Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="lname" placeholder="Last Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="email" placeholder="Mail">
-                        </div>
-                        <div class="form-group">
-                            <input type="number" class="phone" placeholder="Phone">
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" id="" placeholder="Write your message"></textarea>
-                        </div>
-                    </div>
-                    <input type="submit" value="Send Message" class="submit-button">
-                </form>
+              <form id="contact-form" action="http://localhost:3000/send" method="POST">
+                <h2 class="form-title">Send us a message</h2>
+                <div class="form-fields">
+                  <div class="form-group">
+                    <input type="text" name="fname" class="fname" placeholder="First Name" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="text" name="lname" class="lname" placeholder="Last Name" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" name="email" class="email" placeholder="Mail" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="number" name="phone" class="phone" placeholder="Phone" required>
+                  </div>
+                  <div class="form-group">
+                    <textarea name="message" placeholder="Write your message" required></textarea>
+                  </div>
+                </div>
+                <input type="submit" value="Send Message" class="submit-button">
+              </form>
             </div>
+            
         </div>
           <div class="image"></div>
           <div class="circle"></div>
