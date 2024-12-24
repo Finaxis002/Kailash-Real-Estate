@@ -255,6 +255,9 @@
     justify-content: center;
     gap: 2px;
   }
+  .logo img{
+    display: none;
+  }
   .logo h2 {
     padding: 20px 0px 0px 0px;
     font-size: 2rem;
@@ -1188,11 +1191,6 @@
       padding: 3px 5px;
       margin-top: 5px;
     }
-    
-  
-  
-  
-  
   
     /* Hamburger Menu */
   .hamburger {
