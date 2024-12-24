@@ -25,16 +25,7 @@ section {
   font-size: 4rem;
   text-align: center;
   color: #12a1be;
-  /* background: linear-gradient(
-    204deg,
-    rgba(18, 161, 190, 1) 21%,
-    rgba(0, 0, 0, 1) 89%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent; */
-  font-family: cinzel_heading_font;
+  font-family: marcellus;
   font-weight: 900;
 }
 
@@ -186,7 +177,7 @@ section {
   display: flex;
   align-items: start;
   justify-content: start;
-  font-family: cinzel_heading_font;
+  font-family: marcellus;
   background: linear-gradient(
     204deg,
     rgba(18, 161, 190, 1) 21%,
@@ -327,14 +318,12 @@ section {
     text-align: justify;
   }
 .two{
-  height: 60vh;
+  height: 65vh;
 }
   .two .img2{
     display: none;
   }
-  .content2 img{
-    display: none;
-  }
+  
   
 
 }

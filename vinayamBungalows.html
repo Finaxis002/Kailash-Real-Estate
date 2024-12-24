@@ -39,31 +39,32 @@
         </div>
         <div class="contactForm">
             <h2 class="form-title">Send us a message</h2> 
-              <form action="#" method="POST">
+              <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
                 <div class="form-box">
+                  <input type="hidden" name="access_key" value="c4241231-f369-4ca6-9d56-9528013e57e8">
                     <div class="inputbox w-50">
-                        <input type="text" class="fname" required>
+                        <input type="text" name="First name" class="contact-inputs" required>
                         <span>First Name</span>
                     </div>
                     <div class="inputbox w-50">
-                        <input type="text" class="lname" required>
+                        <input type="text" name="Last Name" class="contact-inputs" required>
                         <span>Last Name</span>
                     </div>
                     <div class="inputbox w-50">
-                        <input type="email" class="email" required>
+                        <input type="email" class="email" class="contact-inputs" name='email' required>
                         <span>Email ID</span>
                     </div>
                     <div class="inputbox w-50">
-                        <input type="number" class="phone" required>
+                        <input type="number" class="phone" class="contact-inputs" name='phone' required>
                         <span>Phone Number</span>
                     </div>
                     <div class="inputbox w-100">
-                        <textarea name="message" required ></textarea>
+                        <textarea name="message" class="contact-inputs" required ></textarea>
                         <span>Write your message</span>
                     </div>
                 </div>
                 <div class="inputbox w100 button">
-                  <button class="button-86" role="button">Submit</button>
+                  <button class="button-86" role="button" class="submit-button">Submit</button>
               </div>
                
             </form>

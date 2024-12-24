@@ -144,7 +144,7 @@
         </div>
         <div class="content">
           <h1 class="enlarge">
-            about &nbsp;
+            About &nbsp;
             <span class="golden">Property</span>
           </h1>
           <p>
@@ -163,7 +163,7 @@
           <div class="box-wrapper">
             <div class="carousel-wrap">
               <div class="slider">
-                <img id="slide1" src="./images/building02.jpg" alt="" />
+                <img id="slide1" src="images/kailash_website_img4.jpg" alt="" />
                 <img id="slide2" src="./images/building05.webp" alt="" />
                 <img id="slide3" src="./images/building04.webp" alt="" />
               </div>
@@ -174,25 +174,25 @@
               </div>
             </div>
             <div class="form-wrap">
-              <form action="#" method="POST">
+              <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
                 <h2 class="form-title">Send us a message</h2>
                 <div class="form-fields">
+                  <input type="hidden" name="access_key" value="c4241231-f369-4ca6-9d56-9528013e57e8">
                   <div class="form-group">
-                    <input type="text" class="fname" placeholder="First Name" />
+                    <input type="text" name="First name" class="contact-inputs" placeholder="First Name" />
                   </div>
                   <div class="form-group">
-                    <input type="text" class="lname" placeholder="Last Name" />
+                    <input type="text" name="Last Name" class="contact-inputs" placeholder="Last Name" />
                   </div>
                   <div class="form-group">
-                    <input type="email" class="email" placeholder="Mail" />
+                    <input name="email" class="contact-inputs" id="email" placeholder="Mail" />
                   </div>
                   <div class="form-group">
-                    <input type="number" class="phone" placeholder="Phone" />
+                    <input type="number" name="phone" class="contact-inputs" placeholder="Phone" />
                   </div>
                   <div class="form-group">
                     <textarea
-                      name="message"
-                      id=""
+                    name="message" class="contact-inputs"
                       placeholder="Write your message"
                     ></textarea>
                   </div>

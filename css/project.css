@@ -221,9 +221,6 @@
     .project_section_2_01{
         height: 9em;
     }
-    /* .card:nth-child(1){
-        flex-direction: column;
-    } */
     .card .project_img{
         display: none;
         width: 3%;

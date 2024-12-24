@@ -75,23 +75,21 @@ body {
   top: -240px;
   clip-path: ellipse(100% 15% at -15% 100%);
 }
-.main_vinayam{
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+.main_vinayam h1{
+    margin-bottom: 4%;
 }
 .main_vinayam img{
     margin-top: 10%;
     z-index: 2;
     width: 50%;
-    height: 530px;
+    height: 570px;
     filter: drop-shadow(8px 8px 16px  rgba(0, 0, 0, 0.8));
 }
 .main_vinayam h1,
 .main_vinayam h2{
     font-size: 50px;
     font-weight: 700;
-    font-family:cinzel_heading_font; 
+    font-family: montserrat; 
     z-index: 2;
     margin-left: 55%;
     color: white;
@@ -135,7 +133,7 @@ body {
   font-size: 30px;
   color: black;
   text-align: center;
-  font-family: cinzel_heading_font;
+  font-family: montserrat;
 }
 
 .contact-form .form-group {
@@ -242,7 +240,7 @@ body {
     }
     .vinayam_apartments_about_us_lower h1{
       font-weight: 700;
-      font-family: cinzel_heading_font;
+      font-family: montserrat;
       font-size: 70px;
       padding-bottom: .2em;
       background: linear-gradient(to right, rgba(18, 161, 190, 1) 21%, 
