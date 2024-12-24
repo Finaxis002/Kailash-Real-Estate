@@ -37,6 +37,19 @@
   font-family: logo_font;
   src: url(../fonts/Dealoras-Rp6zo.ttf);
 }
+@font-face{
+  font-family: logo_font1;
+  src: url(../fonts/LogamRegular-8Mv2J.otf);
+}
+@font-face{
+  font-family: logo_font2;
+  src: url(../fonts/LovalinafreeRegular-MVDEn.otf);
+}
+@font-face{
+  font-family: logo_font3_etna;
+  src: url(../fonts/etna-free-font.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -264,17 +277,28 @@ header {
   justify-content: center;
   gap: 2px;
 }
+.logo img{
+  display: none;
+}
+.logo_heading{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
 .logo h2 {
   padding: 20px 0px 0px 0px;
   font-size: 4rem;
-  font-family: logo_font;
-  font-weight: 700;
+  font-family: logo_font3_etna;
+  font-weight: 100;
   margin-bottom: -17px;
+  padding-top: 0;
+  color: #04272e;
 }
 .logo h5 {
-    font-size: 2.50rem;
-    font-family:'marcellus' ;
-    font-weight: 500;
+    font-size: 2rem;
+    font-family:logo_font3_etna ;
+    font-weight: 100;
 }
 .logo img {
   height: 107px;
