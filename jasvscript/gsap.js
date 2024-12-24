@@ -96,7 +96,7 @@ gsap.to(".animated-path", {
   scrollTrigger: {
     trigger: ".counting",
     start: "top 80%",
-    end: "top 30%",
+    end: "top 60%",
     scrub: true,
     // markers: true, // Enable if needed for debugging
   },
