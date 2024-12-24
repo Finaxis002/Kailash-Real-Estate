@@ -66,6 +66,9 @@ section {
     linear-gradient(to bottom, #12a1be 0%, #000000 100%) border-box;
   margin-left: 75%;
 }
+.none-image{
+  display: none;
+}
 
 .contactForm {
   position: absolute;
@@ -251,6 +254,13 @@ section {
 
 
 @media screen and (max-width: 768px){
+  
+  .none-image{
+  display: block;
+}
+.three .content h1::before{
+  height: 70px;
+}
 
   .hero-image, .hero-image2{
     display: none;

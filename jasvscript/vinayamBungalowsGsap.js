@@ -11,20 +11,6 @@ gsap.to(".hero-image",{
     ease: "power1.inOut",
 })
 
-// gsap.to(".hero-image2",{
-//     scrollTrigger: {
-//         trigger:".two",
-//         start:"center 10%",
-//         end:"70%",
-//         scrub:2,
-//        markers:true
-//     },
-//     opacity:1,
-//     top:"90vh",
-//     x:"45vw",
-//     scale:0.7,
-//     ease: "power1.inOut",
-// })
 
 
 
@@ -39,9 +25,10 @@ const timeline = gsap.timeline({
     start: "center 10%", 
     end: "70%", 
     scrub: 2, 
-    // markers: true,
+  //  markers: true,
   },
 });
+
 
 // Add animation for .hero-image2
 timeline.to(".hero-image2", {
