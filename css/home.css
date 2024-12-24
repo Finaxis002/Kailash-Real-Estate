@@ -929,7 +929,7 @@ background: linear-gradient(
 .animated-path {
   stroke-dasharray: 535.6;
   stroke-dashoffset: 535.6;
-  transition: stroke-dashoffset 2s ease-out;
+  transition: stroke-dashoffset 0.5s ease-out;
 }
 
 .gif-image {
