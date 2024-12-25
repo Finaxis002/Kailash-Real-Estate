@@ -279,6 +279,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: 2px;
+  padding-left: 2rem;
 }
 .logo img{
   display: none;
