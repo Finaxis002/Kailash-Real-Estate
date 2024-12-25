@@ -230,6 +230,7 @@ header {
   gap: 23%;
   z-index: 10;
   position: relative;
+  padding-left: 0;
 }
 
 .dropdown {
@@ -285,20 +286,27 @@ header {
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   background: linear-gradient(
+  204deg,
+  rgba(18, 161, 190, 1) 21%,
+  rgba(0, 0, 0, 1) 89%
+);
 }
 .logo h2 {
   padding: 20px 0px 0px 0px;
   font-size: 4rem;
   font-family: logo_font3_etna;
   font-weight: 100;
-  margin-bottom: -17px;
+  margin-bottom: -9px;
   padding-top: 0;
-  color: #04272e;
+  /* color: #04272e; */
+  color: white;
 }
 .logo h5 {
     font-size: 2rem;
     font-family:logo_font3_etna ;
     font-weight: 100;
+    color: white;
 }
 .logo img {
   height: 107px;
