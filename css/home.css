@@ -228,7 +228,7 @@ header {
   padding: 5px 40px;
   display: flex;
   align-items: center;
-  gap: 23%;
+  gap: 37%;
   z-index: 10;
   position: relative;
   padding-left: 0;
@@ -288,6 +288,7 @@ header {
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   padding-left: 51%;
 }
 .logo h2 {
   padding: 20px 0px 0px 0px;
@@ -318,7 +319,7 @@ nav a {
   position: relative;
   transition: color 0.3s ease;
   font-family:montserrat;
-  font-weight: 200;
+  font-weight: bold;
   text-transform: uppercase;
   font-size: 14px;
 }
@@ -479,6 +480,10 @@ background: linear-gradient(
   object-fit: cover;
   height: 32rem;
   width: auto;
+  z-index: 1;
+    margin-left: 11%;
+    
+    margin-top: -3%;
 }
 
 /* Project section css */
