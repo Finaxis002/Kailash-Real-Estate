@@ -278,6 +278,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: 2px;
+  padding-left: 2rem;
 }
 .logo img{
   display: none;
@@ -293,7 +294,7 @@ header {
   font-size: 4rem;
   font-family: logo_font3_etna;
   font-weight: 100;
-  margin-bottom: -17px;
+  margin-bottom: -12px;
   padding-top: 0;
   color: #04272e;
 }
