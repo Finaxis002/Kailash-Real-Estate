@@ -48,9 +48,32 @@
           </ul>
         </div>
       </section>
+      <div class="section-container">
+        <div class="image-container">
+          <img id="dynamic-image" src="./images/timeline-2.jpg" alt="Default Image" />
+        </div>
+        <div class="content-container">
+          <ul class="menu">
+            <li data-image="./images/timeline-1.jpg" >
+              <span>01</span><span>ELEMENTIS Story</span><span class="arrow">→</span>
+            </li>
+            <li data-image="./images/timeline-11.jpg">
+              <span>02</span><span>Our Vision & Mission </span><span class="arrow">→</span>
+            </li>
+            <li data-image="./images/timeline-12.jpg" >
+              <span>03</span><span>Our Commitment </span> <span class="arrow">→</span>
+            </li>
+            <li data-image="./images/timeline-3.jpg" >
+              <span>04</span> <span>Pillars</span>  <span class="arrow">→</span>
+            </li>
+            <li data-image="./images/timeline-2.jpg">
+              <span>05</span><span> Sustainability</span> <span class="arrow">→</span>
+            </li>
+          </ul>
+        </div>
+      </div>
       
-
-
+    
 
      <div id="foot_content"></div>
     </div>
@@ -58,39 +81,6 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-  const ctx = document.querySelector(".qodef-m-canvas canvas").getContext("2d");
-  const data = {
-    datasets: [
-      {
-        data: [33.33, 33.33, 33.33], // Values for each slice
-        backgroundColor: ["#5c607a", "#e7dbc4", "#d4c3aa"], 
-        hoverBackgroundColor: [ "#151F3B","#151F3B","#151F3B"],// Colors for slices
-        borderWidth: 0, // Removes slice borders
-      },
-    ],
-  };
-  const options = {
-    responsive: true,
-    plugins: {
-      tooltip: {
-        enabled: true,
-        callbacks: {
-          label: function (tooltipItem) {
-            return `Individual ${tooltipItem.label}: ${tooltipItem.raw}%`;
-          },
-        },
-      },
-    },
-  };
-  new Chart(ctx, {
-    type: "pie",
-    data: data,
-    options: options,
-  });
-</script>
-
-
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
@@ -111,11 +101,10 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="jasvscript/gsap.js"></script>
+    <script src="jasvscript/service.js"></script>
     <script src="jasvscript/script.js"></script>
     <script src="jasvscript/carousel.js"></script>
     <script src="jasvscript/text.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"

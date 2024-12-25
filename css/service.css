@@ -94,3 +94,106 @@
     width: 100%;
   }
   
+  .section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    background: linear-gradient(
+    204deg,
+    rgba(18, 161, 190, 1) 21%,
+    rgba(0, 0, 0, 1) 89%
+);
+  }
+  
+  .image-container {
+    flex: 1;
+    position: relative;
+    width:40%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 23rem;
+    height: 30rem;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+    position: relative;
+  }
+  .image-container img {
+    z-index: 0; /* Ensure the image is behind the sliding effect */
+  }
+  
+  .image-container img.active {
+    transform: translateY(-100%); /* Slide out the current image */
+  }
+  
+  .image-container img.next {
+    transform: translateY(0); /* Slide in the new image */
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    position: relative; /* Required for ::before pseudo-element positioning */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.1rem 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff; /* Default text color */
+    font-size: 1.5rem;
+    cursor: pointer;
+    overflow: hidden; /* Ensures the ::before element doesn't overflow */
+    width: 50rem;
+    font-family:  marcellus;
+    transition: color 0.3s ease-in-out; /* Smooth transition for text color */
+  }
+  
+  .menu li::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #fff; /* Fill color */
+    z-index: 0; /* Position behind the text */
+    transition: width 0.5s ease-in-out; /* Smooth filling effect */
+  }
+  
+  .menu li:hover::before {
+    width: 100%; /* Expands the background from left to right */
+  }
+  
+  .menu li:hover {
+    color: #12A1BE; /* Changes the text color */
+  }
+  
+  .menu li span {
+    position: relative;
+    z-index: 1; /* Ensures the text stays above the background */
+  }
+  
+  .menu li .arrow {
+    font-size: 3rem;
+    transition: transform 0.3s;
+    transform: rotate(-60deg);
+    font-weight: 100;
+  }
+  
+  .menu li:hover .arrow {
+    color: #12A1BE; /* Changes the text color */
+  }
+  
+  .menu li:first-child {
+    border-top: none;
+  }
+  
