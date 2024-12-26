@@ -6,7 +6,7 @@ footer {
       rgba(18, 161, 190, 0.904) 21%, /* Semi-transparent gradient */
       rgba(0, 0, 0, 0.842) 89%
     ),
-    url('../images/footer-bg.jpg'); /* Background image */
+    url('../images/footer-bg.webp'); /* Background image */
   background-size: cover; 
   background-position: center;
   padding: 1.3rem 2rem;
