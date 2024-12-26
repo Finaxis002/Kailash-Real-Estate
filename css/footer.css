@@ -9,7 +9,7 @@ footer {
     url('../images/footer-bg.jpg'); /* Background image */
   background-size: cover; 
   background-position: center;
-  padding: 3rem 4rem;
+  padding: 1rem 4rem;
   display: flex;
   flex-direction: column;
   height: auto;
@@ -17,14 +17,13 @@ footer {
   gap: 1rem;
   backdrop-filter: blur(10px); /* Adds the blur effect */
   -webkit-backdrop-filter: blur(10px); /* Ensures compatibility with Safari */
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: adds a frosted border */
 }
 
 
 footer .top{
   display: flex;
   width: 100%;
-  gap: 4rem;
+  gap: 3.5rem;
   justify-content: center;
 }
 
@@ -148,6 +147,7 @@ footer .social-icon li a:hover {
 .footer_follow{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .footer_follow p {
   font-size: 1rem;
@@ -200,7 +200,7 @@ footer .social-icon li a:hover {
 .info-wrap-footer  .info-details li a {
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 17px;
 }
 .info-wrap-footer  .info-details li a:hover {
   cursor: pointer;
@@ -244,29 +244,54 @@ footer .social-icon li a:hover {
 }
 
 @media screen and (max-width: 768px) {
-  footer {
-    height: 30%;
-    padding-left: 10px;
+  footer{
+    padding: 2rem 0.2rem;
+  }
+  footer .top {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  footer .section{
+    padding: 0.2rem;
+  }
+  .info-wrap-footer .info-details li a {
+    font-size: 14px;
+  }
+  footer .footer_about_heading li{
+    font-size: 14px;
+  }
+  .info-wrap-footer{
+    padding: 0rem 1rem;
   }
   .footer_content {
     flex-direction: column;
     align-items: start;
     justify-content: start;
   }
-  footer .wave {
-    background: none;
-  }
+ 
   .footer_about_heading {
     padding-left: 1rem;
   }
   .footer_follow {
     padding-left: 0;
+    justify-content: start;
   }
-  .footer_address {
-    padding-left: 1rem;
-    padding-bottom: 0.5rem;
-  }
+  
   .footer_follow p {
     padding-left: 1rem;
+  }
+  footer .copyright{
+    gap: 5px;
+    padding: 0rem 1rem;
+  }
+  footer .copyright{
+    font-size: 14px;
+  }
+  .whatsapp-container{
+    bottom: 85px;
+  }
+  .whatsapp-icon {
+    width: 40px;
+    height: 40px;
   }
 }
