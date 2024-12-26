@@ -1376,6 +1376,15 @@ main{
     color: #000;
     text-align: center;
   }
+  .logo_heading {
+    padding: 0;
+  }
+  .logo h2{
+    font-size: 3rem;
+  }
+  .logo{
+    padding: 0;
+  }
 
   .dropdown-content {
     position: static;

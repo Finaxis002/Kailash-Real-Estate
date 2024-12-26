@@ -38,15 +38,15 @@
     menuItems.forEach((item) => {
     item.addEventListener("mouseenter", () => {
         const imageSrc = item.getAttribute("data-image");
-        dynamicImage.style.opacity = 0; // Fade out the current image
+        dynamicImage.style.opacity = 0; 
         setTimeout(() => {
-        dynamicImage.setAttribute("src", imageSrc); // Change the image source
-        dynamicImage.style.opacity = 1; // Fade in the new image
-        }, 200); // Adjust this duration to match the fade-out transition time
+        dynamicImage.setAttribute("src", imageSrc); 
+        dynamicImage.style.opacity = 1;
+        }, 200);
     });
 
     item.addEventListener("mouseleave", () => {
-        // Optional: Reset the image to default smoothly
+      
         dynamicImage.style.opacity = 0;
         setTimeout(() => {
         dynamicImage.setAttribute("src", "./images/timeline-2.jpg");
