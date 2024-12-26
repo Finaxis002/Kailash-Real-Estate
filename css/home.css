@@ -1344,7 +1344,7 @@ main{
   .hero-bg {
     flex-direction: row;
     height: auto;
-    padding: 4rem 1rem;
+    padding: 2rem 0rem 0rem 0rem;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -1396,12 +1396,22 @@ main{
 
   /* hero section responsive */
   .hero-bg{
-    flex-direction: row;
+    flex-direction: column;
+  }
+  .image_div{
+    margin-top: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
   }
   .image_div img{
-    display: none;
-    visibility: hidden;
+    position: relative;
+    height: 19rem;
+    margin: 0;
+  
   }
+  
   .heading-parent{
     width: 100%;
   }
