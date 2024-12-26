@@ -482,9 +482,8 @@ background: linear-gradient(
   height: 32rem;
   width: auto;
   z-index: 1;
-    margin-left: 11%;
-    
-    margin-top: -3%;
+  position: absolute;
+  right: 0%;
 }
 
 /* Project section css */
