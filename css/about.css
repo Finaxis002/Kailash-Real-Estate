@@ -414,6 +414,7 @@
     .about-two .content2 .numbers{
       padding: 10px;
       height: auto;
+      width: 70%;
     }
 
     .about-two .content2 p{
@@ -476,7 +477,7 @@
     margin-top: 25%;
 }
 .about-two {
-  height: 200vh;
+  height: auto;
 }
 }
 

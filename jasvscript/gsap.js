@@ -3,15 +3,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Animate .project1 moving into view
 gsap.to(".project1", {
-  scrollTrigger: {
-    trigger: ".projects",
-    start: "top 100%",
-    end: "top 50%",
-    scrub: true,
-  },
-  x: "0%", // Corrected: Kept as is since it works
-  duration: 5, // Corrected: Duration works as is
-  ease: "power1.out",
+    scrollTrigger: {
+      trigger: ".projects",
+      start: "top 100%",
+      end: "top 50%",
+      scrub: true,
+    },
+    x: "0%", 
+    duration: 5,
+    ease: "power1.out",
 });
 
 // Animate .project2 moving into view
@@ -22,7 +22,7 @@ gsap.to(".project2", {
     end: "top 50%",
     scrub: true,
   },
-  x: "0%", // Corrected: Kept as is since it works
+  x: "0%", 
   duration: 5, // Corrected: Duration works as is
   ease: "power1.out",
 });
