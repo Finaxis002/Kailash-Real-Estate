@@ -482,9 +482,8 @@ background: linear-gradient(
   height: 32rem;
   width: auto;
   z-index: 1;
-    margin-left: 11%;
-    
-    margin-top: -3%;
+  position: absolute;
+  right: 0%;
 }
 
 /* Project section css */
@@ -1375,6 +1374,15 @@ main{
     padding: 10px 20px;
     color: #000;
     text-align: center;
+  }
+  .logo_heading {
+    padding: 0;
+  }
+  .logo h2{
+    font-size: 3rem;
+  }
+  .logo{
+    padding: 0;
   }
 
   .dropdown-content {

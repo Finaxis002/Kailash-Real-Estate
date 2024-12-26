@@ -20,6 +20,7 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: adds a frosted border */
 }
 
+
 footer .top{
   display: flex;
   width: 100%;
@@ -67,12 +68,29 @@ footer .social-icon {
 footer .social-icon i{
   font-size: 22px;
 }
+footer a{
+  color: #fff;
+  cursor: pointer;
+}
+.info-wrap-footer{
+  display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
 footer .social-icon li a {
   font-size: 2em;
   color: #fff;
   display: inline-block;
   transition: 0.5s;
+}
+li{
+  list-style: none;
+}
+footer .footer_about_heading li{
+  list-style: none;
+  text-transform: uppercase;
+    font-weight: 600;
 }
 footer .social-icon li a:hover {
   transform: translateY(-10px);
@@ -105,8 +123,7 @@ footer .social-icon li a:hover {
 }
 .footer_logo h2 {
   color: white;
-  font-size: 1.5rem;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-family: logo_font3_etna;
   font-weight: 100;
   text-transform: uppercase;
@@ -114,7 +131,7 @@ footer .social-icon li a:hover {
 }
 .footer_logo h5 {
   color: white;
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-family: logo_font3_etna;
   font-weight: 100;
   text-transform: uppercase;
@@ -148,6 +165,13 @@ footer .social-icon li a:hover {
   text-align: left;
   font-size: 28px;
   letter-spacing: 0.5px;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+.info-wrap-footer hr{
+  color: #fff;
+  margin: 0;
 }
 .info-wrap-footer  .info-sub-title{
   font-size: 18px;
