@@ -360,6 +360,7 @@
     margin-right: 15px; /* Space between the line and the text */
 }
 
+
 @media screen and (max-width: 768px) {
     .container1{
         flex-direction: column;
