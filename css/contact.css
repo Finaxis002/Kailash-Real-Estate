@@ -246,6 +246,7 @@
     }
     .form-wrap{
         margin-left: 2%;
+        width: 95% !important;
     }
     
 }
