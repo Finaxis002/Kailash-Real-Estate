@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kailash Real Estate</title>
-
-    <link rel="stylesheet" href="./css/home.css" />
-    <link rel="stylesheet" href="./css/jagnath.css" />
-    <link rel="stylesheet" href="./css/contact.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="icon" type="image/png" href="../images/Kailash-Real-Estate-meta.png" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/jagnath.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,10 +24,19 @@
     <div class="main main-jagannath-puri">
       <div id="smcircle"></div>
       <div id="head_content"></div>
+
+      <script>
+          fetch('../assets/header.html')
+              .then(response => response.text())
+              .then(data => {
+                  document.getElementById('head_content').innerHTML = data;
+              })
+              .catch(error => console.error('Error loading header:', error));
+      </script>
        <section class="one">
          <div class="flex">
           <div class="content1">
-            <h1>Welcome<br>To <br> Jagnathpuri</h1>
+            <h1>Welcome<br>To <br> Jagnnathpuri</h1>
            
             <a href="#details"><button id="details" class="button-86" role="button">View Details</button></a>
            </div>
@@ -39,7 +48,7 @@
               <p>We craft custom homes </p>
              </div>
           
-             <img src="./images/project.png" alt="">
+             <img src="../images/project.png" alt="">
 
            </div>
          </div>
@@ -61,12 +70,12 @@
         <div class="phone">
           <div  id="details" class="content">
             <h2>Hello, Visitors</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, blanditiis.</p>
+            <p>Discover your dream property with Kailash Real Estate's trusted services.</p>
           </div>
         <div class="images">
-         <img src="./images/building02.jpg" alt="">
-         <img src="./images/building04.webp" alt="">
-         <img src="./images/building05.webp" alt="">
+         <img src="../images/building1.jpg" alt="">
+         <img src="../images/building04.webp" alt="">
+         <img src="../images/building05.webp" alt="">
         </div>
         <div class="nav-div">
           <ul>
@@ -79,7 +88,7 @@
         </div>
           
         <div class="image">
-          <img src="./images/image02.jpg" alt="">
+          <img src="../images/image02.jpg" alt="">
           <div class="nav-div">
             <div class="circle">
               <i class="fa-solid fa-house"></i>
@@ -98,16 +107,16 @@
               <ul class="info-details">
                   <li>
                       <i class="fas fa-phone-alt"></i>
-                      <span>Phone:</span> <a href="tel:+91- 942-500-8997">+91- 942-500-8997</a>
+                      <a href="tel:+91- 942-500-8997">+91- 942-500-8997</a>
                   </li>
                   <li>
                       <i class="fas fa-paper-plane"></i>
-                      <span>Email:</span> <a href="mailto:info@yoursite.com">kailashrealestate07@gmail.com</a>
+                      <a href="mailto:info@yoursite.com">kailashrealestate07@gmail.com</a>
                   </li>
                  
                   <li>
                     <i class="fa-solid fa-location-dot"></i>
-                    <span>Address:</span> <a href="#">HIG -59, A Sector Vidhya  Nagar, Bhopal 462026</a>
+                    <a href="#">HIG -59, A Sector Vidhya  Nagar, Bhopal 462026</a>
                 </li>
               </ul>
               <ul class="social-icons">
@@ -118,7 +127,6 @@
         
           </div>
           <div class="contactForm">
-            <h2 class="form-title">Send us a message</h2> 
               <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
                 <div class="form-box">
                   <input type="hidden" name="access_key" value="c4241231-f369-4ca6-9d56-9528013e57e8">
@@ -152,7 +160,21 @@
           </div>
         </div>
        </section>
-      <div id="foot_content"></div>
+       <div id="foot_content"></div>
+
+       <script>
+           fetch('../assets/footer.html') // Path to your footer file
+               .then(response => {
+                   if (!response.ok) {
+                       throw new Error('Network response was not OK');
+                   }
+                   return response.text();
+               })
+               .then(data => {
+                   document.getElementById('foot_content').innerHTML = data;
+               })
+               .catch(error => console.error('Error loading footer:', error));
+       </script>
     </div>
     
 
