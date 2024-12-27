@@ -23,7 +23,7 @@ footer {
 footer .top{
   display: flex;
   width: 100%;
-  gap: 8.5rem;
+  gap: 9.5rem;
   justify-content: center;
 }
 
@@ -168,7 +168,7 @@ footer .social-icon li a:hover {
   justify-content: center;
 }
 .footer_follow p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #fff;
   font-weight: 500;
   margin: 0;
