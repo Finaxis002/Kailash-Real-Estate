@@ -25,14 +25,7 @@
       <div id="head_content"></div>
       <div id="head_content"></div>
 
-      <script>
-          fetch('../assets/header.html')
-              .then(response => response.text())
-              .then(data => {
-                  document.getElementById('head_content').innerHTML = data;
-              })
-              .catch(error => console.error('Error loading header:', error));
-      </script>
+     
       <section class="vinayam_2">
         <div class="main_vinayam">
           <img src="../images/apartmentimg.webp" alt="" />
@@ -51,7 +44,7 @@
           </div>
 
           <div class="vinayam_apartments_about_us_lower">
-            <h2 class="Kailash_static_heading">KAILASH</h2>
+            
             <h1>About Us</h1>
             <hr class="line_after_about_text" />
             <p>
@@ -162,19 +155,7 @@
       </section>
       <div id="foot_content"></div>
 
-        <script>
-            fetch('../assets/footer.html') // Path to your footer file
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not OK');
-                    }
-                    return response.text();
-                })
-                .then(data => {
-                    document.getElementById('foot_content').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading footer:', error));
-        </script>
+       
     </div>
 
     <script

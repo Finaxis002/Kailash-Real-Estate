@@ -68,8 +68,7 @@
   width: 22rem;
   height: 28rem;
   position: absolute;
-  margin-top: -28.5%;
-  margin-left: 10%;
+  margin-left: 14%;
   background: linear-gradient(
     204deg,
     rgba(18, 161, 190, 1) 21%,
@@ -84,6 +83,9 @@
 }
 
 .vinay_img_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .vinay_img_div img {
   width: 30rem;

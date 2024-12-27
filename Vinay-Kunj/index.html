@@ -24,18 +24,11 @@
     <div class="main main2">
       <div id="smcircle"></div>
       <div id="head_content"></div>
-      <script>
-        fetch('../assets/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('head_content').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading header:', error));
-    </script>
+     
       <section class="vinaykunj">
         <div class="vinay_hero_section">
             <div>
-                 <img src="../images/project.png" alt="">
+                 <img src="../images/project.webp" alt="">
             </div>
             <div class="vinay_heading_div">
                  <h1>WELCOME TO </h1>
@@ -158,19 +151,6 @@
         </div>
       </section>
       <div id="foot_content"></div>
-      <script>
-        fetch('../assets/footer.html') // Path to your footer file
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not OK');
-                }
-                return response.text();
-            })
-            .then(data => {
-                document.getElementById('foot_content').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading footer:', error));
-    </script>
     
     </div>
     <script
