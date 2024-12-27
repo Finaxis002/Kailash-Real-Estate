@@ -25,14 +25,7 @@
       <div id="smcircle"></div>
       <div id="head_content"></div>
 
-      <script>
-          fetch('../assets/header.html')
-              .then(response => response.text())
-              .then(data => {
-                  document.getElementById('head_content').innerHTML = data;
-              })
-              .catch(error => console.error('Error loading header:', error));
-      </script>
+     
        <section class="one">
          <div class="flex">
           <div class="content1">
@@ -48,7 +41,7 @@
               <p>We craft custom homes </p>
              </div>
           
-             <img src="../images/project.png" alt="">
+             <img src="../images/project.webp" alt="">
 
            </div>
          </div>
@@ -162,19 +155,7 @@
        </section>
        <div id="foot_content"></div>
 
-       <script>
-           fetch('../assets/footer.html') // Path to your footer file
-               .then(response => {
-                   if (!response.ok) {
-                       throw new Error('Network response was not OK');
-                   }
-                   return response.text();
-               })
-               .then(data => {
-                   document.getElementById('foot_content').innerHTML = data;
-               })
-               .catch(error => console.error('Error loading footer:', error));
-       </script>
+       
     </div>
     
 
@@ -197,10 +178,10 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./jasvscript/gsap.js"></script>
-    <script src="./jasvscript/script.js"></script>
-    <script src="./jasvscript/project-carousel.js"></script>
-    <script src="./jasvscript/text.js"></script>
+    <script src="../jasvscript/gsap.js"></script>
+    <script src="../jasvscript/script.js"></script>
+    <script src="../jasvscript/project-carousel.js"></script>
+    <script src="../jasvscript/text.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"

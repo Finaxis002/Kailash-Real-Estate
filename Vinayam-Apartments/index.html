@@ -25,17 +25,10 @@
       <div id="head_content"></div>
       <div id="head_content"></div>
 
-      <script>
-          fetch('../assets/header.html')
-              .then(response => response.text())
-              .then(data => {
-                  document.getElementById('head_content').innerHTML = data;
-              })
-              .catch(error => console.error('Error loading header:', error));
-      </script>
+     
       <section class="vinayam_2">
         <div class="main_vinayam">
-          <img src="../images/apartmentimg.png" alt="" />
+          <img src="../images/apartmentimg.webp" alt="" />
           <h1>WELCOME TO</h1>
           <h2>VINAYAM APARTMENTS</h2>
         </div>
@@ -46,12 +39,12 @@
 
         <div class="vinayam_apartments_about_us">
           <div class="vinayam_apartments_about_us_upper">
-            <img src="../images/vinayam_about_us.png" alt="" />
-            <img src="../images/3d_about_vinayam.png" alt="" class="about_3d" />
+            <img src="../images/vinayam_about_us.webp" alt="" />
+            <img src="../images/3d_about_vinayam.webp" alt="" class="about_3d" />
           </div>
 
           <div class="vinayam_apartments_about_us_lower">
-            <h2 class="Kailash_static_heading">KAILASH</h2>
+            
             <h1>About Us</h1>
             <hr class="line_after_about_text" />
             <p>
@@ -67,18 +60,18 @@
         <div class="vinayam_apart_contact">
           <div class="cloud-box">
             <img
-              src="../images/cloud_3d.png"
+              src="../images/cloud_3d.webp"
               alt=""
               class="updown-animation"
               style="height: 114px; position: absolute; z-index: 1000"
             />
             <img
-              src="../images/paper_plan-Photoroom.png"
+              src="../images/paper_plan-Photoroom.webp"
               alt=""
               class="updown-animation"
             />
             <img
-              src="../images/cloud_3d.png"
+              src="../images/cloud_3d.webp"
               alt=""
               class="updown-animation"
               style="
@@ -162,19 +155,7 @@
       </section>
       <div id="foot_content"></div>
 
-        <script>
-            fetch('../assets/footer.html') // Path to your footer file
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not OK');
-                    }
-                    return response.text();
-                })
-                .then(data => {
-                    document.getElementById('foot_content').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading footer:', error));
-        </script>
+       
     </div>
 
     <script
