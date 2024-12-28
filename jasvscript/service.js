@@ -4,8 +4,8 @@
     datasets: [
       {
         data: [33.33, 33.33, 33.33], // Values for each slice
-        backgroundColor: ["#5c607a", "#e7dbc4", "#d4c3aa"], 
-        hoverBackgroundColor: [ "#151F3B","#151F3B","#151F3B"],// Colors for slices
+        backgroundColor: ["#12A1BE", "#e7dbc4", "#d4c3aa"], 
+        hoverBackgroundColor: [ "#003944d6","#003944d6","#003944d6"],// Colors for slices
         borderWidth: 0, // Removes slice borders
       },
     ],

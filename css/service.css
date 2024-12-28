@@ -1,217 +1,311 @@
 .fractional-real-estate {
-    display: flex;
-    align-items: center;
-    padding: 10rem 4rem;
-    font-family: 'Arial', sans-serif;
-    color: #2c2c2c;
-    gap: 12rem;
-  }
-  
-  .content {
-    max-width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-    text-align: start;
-    gap: 1.5rem;
-  }
-  
-  .content h5 {
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-    color: #b68959;
-    text-align: start;
-  }
-  
-  .content h1 {
-    font-size: 3rem;
-    font-weight: 200;
-    text-align: start;
-    font-family:  marcellus;
-  }
-  
-  .content ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .content ul li {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    color: #555;
-    font-family:  marcellus;
-  }
-  
-  .chart {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  
+  display: flex;
+  align-items: center;
+  padding: 6rem 4rem;
+  font-family: "Arial", sans-serif;
+  color: #2c2c2c;
+  gap: 12rem;
+}
 
-  .legend {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .legend li {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1rem;
-  }
-  
-  .legend span {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-  }
-  .qodef-m-canvas-holder {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%; /* Ensures circular clipping */
-    width: 210px; /* Set to slightly larger than the canvas */
-    height: 210px;
-    overflow: hidden;
-  }
-  
-  .qodef-m-canvas {
-    position: relative;
-  }
-  
-  .qodef-m-canvas canvas {
-    display: block;
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .section-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    gap: 2rem;
-    background: linear-gradient(
+.content {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  text-align: start;
+  gap: 1.5rem;
+}
+
+.content h5 {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: #b68959;
+  text-align: start;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  font-weight: 200;
+  text-align: start;
+  font-family: marcellus;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.content ul li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-family: marcellus;
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.legend {
+  list-style: none;
+  padding: 0;
+}
+
+.legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.legend span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.qodef-m-canvas-holder {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Ensures circular clipping */
+  width: 210px; /* Set to slightly larger than the canvas */
+  height: 210px;
+  overflow: hidden;
+}
+
+.qodef-m-canvas {
+  position: relative;
+}
+
+.qodef-m-canvas canvas {
+  display: block;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+.section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  background: linear-gradient(
     204deg,
     rgba(18, 161, 190, 1) 21%,
     rgba(0, 0, 0, 1) 89%
-);
-margin-bottom: 3rem;
-  }
-  
-  .image-container {
-    flex: 1;
-    position: relative;
-    width:40%;
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  .image-container img {
-    width: 23rem;
-    height: 30rem;
-    border-radius: 8px;
-    object-fit: cover;
-    transition: opacity 0.5s ease-in-out;
-    position: relative;
-  }
-  .image-container img {
-    z-index: 0; /* Ensure the image is behind the sliding effect */
-  }
-  
-  .image-container img.active {
-    transform: translateY(-100%); /* Slide out the current image */
-  }
-  
-  .image-container img.next {
-    transform: translateY(0); /* Slide in the new image */
-  }
-  
-  .menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .menu li {
-    position: relative; /* Required for ::before pseudo-element positioning */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.1rem 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    color: #ffffff; /* Default text color */
-    font-size: 1.5rem;
-    cursor: pointer;
-    overflow: hidden; /* Ensures the ::before element doesn't overflow */
-    width: 50rem;
-    font-family:  marcellus;
-    transition: color 0.3s ease-in-out; /* Smooth transition for text color */
-  }
-  
-  .menu li::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #fff; /* Fill color */
-    z-index: 0; /* Position behind the text */
-    transition: width 0.5s ease-in-out; /* Smooth filling effect */
-  }
-  
-  .menu li:hover::before {
-    width: 100%; /* Expands the background from left to right */
-  }
-  
-  .menu li:hover {
-    color: #12A1BE; /* Changes the text color */
-  }
-  
-  .menu li span {
-    position: relative;
-    z-index: 1; /* Ensures the text stays above the background */
-  }
-  
-  .menu li .arrow {
-    font-size: 3rem;
-    transition: transform 0.3s;
-    transform: rotate(-60deg);
-    font-weight: 100;
-  }
-  
-  .menu li:hover .arrow {
-    color: #12A1BE; /* Changes the text color */
-  }
-  
-  .menu li:first-child {
-    border-top: none;
-  }
-  
+  );
+  margin-bottom: 3rem;
+}
 
-  @media(max-width:748px){
-    .fractional-real-estate{
-      padding: 2rem 1rem;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    .fractional-real-estate .content{
-      max-width: 100%;
-    }
-    .fractional-real-estate .content h1{
-      font-size: 2rem;
-    }
-    .fractional-real-estate .content li{
-      font-size: 1rem;
-    }
+.image-container {
+  flex: 1;
+  position: relative;
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 23rem;
+  height: 30rem;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+  position: relative;
+}
+.image-container img {
+  z-index: 0; /* Ensure the image is behind the sliding effect */
+}
+
+.image-container img.active {
+  transform: translateY(-100%); /* Slide out the current image */
+}
+
+.image-container img.next {
+  transform: translateY(0); /* Slide in the new image */
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  position: relative; /* Required for ::before pseudo-element positioning */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.1rem 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff; /* Default text color */
+  font-size: 1.3rem;
+  cursor: pointer;
+  overflow: hidden; /* Ensures the ::before element doesn't overflow */
+  width: 50rem;
+  font-family: marcellus;
+  transition: color 0.3s ease-in-out; /* Smooth transition for text color */
+}
+
+.menu li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #fff; /* Fill color */
+  z-index: 0; /* Position behind the text */
+  transition: width 0.5s ease-in-out; /* Smooth filling effect */
+}
+
+.menu li:hover::before {
+  width: 100%; /* Expands the background from left to right */
+}
+
+.menu li:hover {
+  color: #12a1be; /* Changes the text color */
+}
+
+.menu li span {
+  position: relative;
+  z-index: 1; /* Ensures the text stays above the background */
+}
+
+.menu li .arrow {
+  font-size: 3rem;
+  transition: transform 0.3s;
+  transform: rotate(-60deg);
+  font-weight: 100;
+}
+
+.menu li:hover .arrow {
+  color: #12a1be; /* Changes the text color */
+}
+
+.menu li:first-child {
+  border-top: none;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  
+}
+.section2 h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #00000033;
+}
+
+.cards {
+  padding: 2rem 1rem;
+  /* background-color: red; */
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+}
+.card{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+  font-family: montserrat;
+  border: 1px solid #12a1be4f !important;
+  text-align: justify;
+  box-shadow: 15px 20px 10px #12a1be1c;
+}
+
+.card::after{
+  width: 100%;
+    height: 100%;
+    content: "";
+    border: 2px solid #12a1be59;
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 18%;
+    z-index: -1;
+    border-radius: 5px;
+}
+.card img{
+  width: 4rem;
+}
+.card h3{
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+}
+.card .para{
+  display: flex;
+  flex-direction: column;
+
+}
+.card p{
+  font-size: 14px
+}
+.card .num{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  font-size: 3rem;
+  font-family:  logo_font2;
+  color: #0c798f;
+}
+@media (max-width: 748px) {
+  .fractional-real-estate {
+    padding: 2rem 1rem;
+    flex-direction: column;
+    gap: 1rem;
   }
+  .fractional-real-estate .content {
+    max-width: 100%;
+  }
+  .fractional-real-estate .content h1 {
+    font-size: 2rem;
+  }
+  .fractional-real-estate .content li {
+    font-size: 1rem;
+  }
+  .section2 h1 {
+    font-size: 2.5rem;
+  }
+  .cards{
+    flex-direction: column;
+  }
+ .card::after{
+  margin-top: 16%;
+    margin-left: 14%;
+ } 
+ .section-container{
+  flex-direction: column;
+ }
+ .section-container .image-container{
+  width: 100%;
+ }
+ .image-container img{
+  height: 15rem;
+ }
+ .menu li{
+  font-size: 14px;
+ }
+
+}
